@@ -1,0 +1,5006 @@
+Variables:
+
+"""
+table
+object reference count
+"""
+
+a="nyc"
+b="nyc"
+
+print(a)
+
+a=123
+
+print(a)
+print(b)
+
+b=456
+print(b)
+
+c='nyc'
+d=c
+
+print(c==d)
+print(d is c)
+
+Numbers:
+
+int_num = 10
+float_num = 20.0
+
+print(int_num)
+print(float_num)
+
+a = 10
+b = 20
+
+print("*******************")
+
+add = a + b
+print(add)
+
+sub = b - a
+print(sub)
+
+multi = a * b
+print(multi)
+
+div_mychoice = b / a
+print(div_mychoice)
+
+Number Operations:
+
+# This is a one line comment
+
+# Exponentiation
+# 10 * 10 ... 20
+exponents = 10 ** 20
+print(exponents)
+
+
+"""
+This is a multi-line comment
+Modulo - It returns the remainder
+"""
+
+remainder = 11 % 3
+print(remainder)
+
+Booleans:
+
+"""
+Examples to show how boolean works in python
+"""
+
+a = True
+b = False
+
+print(a)
+print(b)
+
+print("**************************")
+print(bool(0))
+print(bool(1))
+print(bool(2))
+
+c = ""
+print(bool(c))
+
+c = "Some Value"
+print(bool(c))
+
+Strings:
+
+"""
+Examples to show how strings works in python
+
+Sequence of characters
+Contains a-z, 0-9, @
+In double or single quotes
+"""
+
+a = "This is a simple string"
+b = 'Using single quotes'
+
+print(a)
+print(b)
+
+c = "Need to use 'quotes' inside a string"
+print(c)
+
+d = "Another way to handle \"quotes\""
+print(d)
+
+a = "This is a single\
+ string"
+print(a)
+
+
+String Methods:
+
+"""
+Examples to show available string methods in python
+"""
+
+# Accessing characters in a string
+# index starts from zero
+first = "nyc"[0]
+city = "sfo"
+print(first)
+ft = city[0]
+print(ft)
+
+
+"""
+len()
+lower()
+upper()
+str()
+"""
+
+stri = "This Is a Mixed Case"
+print(stri.lower())
+print(stri.upper())
+print(len(stri))
+
+print(stri + str(2))
+
+"""
+Concatenation
+"""
+print("Hello " + " " + " World !!!")
+print(first + " " + city)
+
+String method 2:
+
+"""
+Examples to show available string methods in python
+"""
+
+# Replace Method
+a = "1abc2abc3abc4abc"
+print(a.replace('abc', 'ABC'))
+
+# Sub-Strings
+# starting index is inclusive
+# Ending index is exclusive
+sub = a[1:6]
+step = a[1:6:2]
+
+print("****************")
+
+print(sub)
+print(step)
+
+
+String Formatting:
+
+"""
+Examples to show how string formatting works in python
+"""
+
+city = "nyc"
+event = "show"
+
+print("Welcome to " + city + " and enjoy the " + event)
+print("Welcome to %s" % city)
+print("Welcome to %s and enjoy the %s" % (city, event))
+
+List Demo:
+
+"""
+Data type to store more than one value in one variable name
+List items are in brackets, separated with "," [ 1, 2, 3 ]
+"""
+
+cars = [ "bmw", "honda", "audi"]
+empty_list = []
+print(empty_list)
+print(cars)
+
+print("*#"*20)
+
+print(cars[1])
+
+num_list = [1, 2, 3]
+sum_num = num_list[0] + num_list[1]
+
+print(sum_num)
+
+more_cars = [ "bmw", "honda", "audi"]
+print(more_cars[1])
+
+more_cars[1] = "Benz"
+
+print(more_cars[1])
+print(more_cars)
+
+Dictionary Demo:
+
+"""
+Data type to store more than one value in one variable name, in terms of key value pairs
+Dictionary items are in brackets {} in key:value pairs, separated with "," {'k1':'v1', 'k2':'v2'}
+Not sequenced, no indexing -> Mapping
+"""
+
+car = {'make': 'bmw', 'model': '550i', 'year': 2016}
+print(car)
+
+d = {}
+
+model = car['model']
+
+print(car['make'])
+print(model)
+
+d['one'] = 1
+d['two'] = 2
+
+print(d)
+
+sum_1 = d['two'] + 8
+print(sum_1)
+print(d)
+d['two'] = d['two'] + 8
+print(d)
+
+Dictnested:
+
+"""
+Nested Dictionary:
+d = {'k1': {'nestk1':'nestvalue1', 'nestk2': 'nestvalue2'}}
+d['k1']['nestk1']
+"""
+
+cars = {'bmw': {'model': '550i', 'year': 2016}, 'benz': {'model': 'E350', 'year': 2015}}
+bmw_year = cars['bmw']['year']
+print(bmw_year)
+print(cars['benz']['model'])
+
+dicmethods:
+
+"""
+Dictionary Methods
+"""
+
+car = {'make': 'bmw', 'model': '550i', 'year': 2016}
+cars = {'bmw': {'model': '550i', 'year': 2016}, 'benz': {'model': 'E350', 'year': 2015}}
+
+print(car.keys())
+print(cars.keys())
+print(car.values())
+print(cars.values())
+print(car.items())
+
+car_copy = car.copy()
+print(car_copy)
+
+print(car.pop('model'))
+print(car)
+
+tuplesdemo:
+
+"""
+Tuple
+Like list but they are immutable
+It means you can't change them
+"""
+
+my_list = [1, 2, 3]
+print(my_list)
+
+my_list[0] = 0
+print(my_list)
+
+my_tuple = (1, 2, 3, 2, 2, 3)
+print(my_tuple)
+
+print(my_tuple[0])
+
+print(my_tuple[1:])
+
+print(my_tuple.index(2))
+
+print(my_tuple.count(3))
+
+
+Comparators:
+
+"""
+== --> Value Equality
+!= --> Not equal to
+< --> Less than
+> --> Greater than
+<= --> Less than or equal to
+>= --> Greater than or equal to
+"""
+
+bool_one = 10 == 11
+not_equal = 10 != 11
+less_than = 10 < 11
+greater_than = 10 > 9
+lt_eq = 10 <= 10
+gt_eq = 10 >= 11 - 1
+print (gt_eq)
+
+Boolean operators:
+
+"""
+and
+**************************************
+True and True   --> True
+True and False  --> False
+False and False --> False
+**************************************
+
+or
+**************************************
+True or True   --> True
+True or False  --> True
+False or False --> False
+**************************************
+
+not
+**************************************
+Not True  --> False
+Not False --> True
+"""
+
+and_output1 = (10 == 10) and (10 > 9)
+and_output2 = (10 == 10) and (10 < 9)
+and_output3 = (10 > 10) and (10 < 9)
+
+or_output1 = (10 == 10) or (10 > 9)
+or_output2 = (10 == 10) or (10 < 9)
+or_output3 = (10 > 10) or (10 < 9)
+
+not_true = not (10 == 10)
+not_false = not (10 > 10)
+
+print(not_false)
+
+Boolean precedence:
+
+"""
+1. not
+2. and
+3. or
+"""
+
+bool_output = True or not False and False
+#  True
+print(bool_output)
+
+bool_output_1 = (10 == 10 or not 10 > 10) and 10 > 10
+# True or True -> True and False -> False
+print(bool_output_1)
+
+Conditional:
+
+"""
+Conditional Logic
+"""
+
+if 100 > 10:
+    print("Hundred is greater than 10")
+
+value = 'red'
+
+if value == 'green':
+    print("Go")
+elif value == 'yellow':
+    print("Prepare to stop")
+else:
+    print("Stop")
+
+print("It will always print")
+
+Whiledemo:
+
+"""
+Execute statements repeatedly
+Conditions are used to stop the execution of loops
+Iterable items are Strings, List, Tuple, Dictionary
+"""
+
+x = 0
+while x < 10:
+    print("Value of x is: " + str(x))
+    x = x + 1
+
+l = []
+num = 0
+while num < 10:
+    l.append(num)
+    print("Value of num is: " + str(num))
+    num += 1
+
+print(l)
+
+breakcontinue:
+
+"""
+Break: To break out of the closest enclosing loop
+Continue: Go to the start of the closest enclosing loop
+"""
+
+x = 0
+while x < 10:
+    print("Value of x is: " + str(x))
+    x = x + 1
+
+    if x == 8:
+        break
+    print("This example is awesome")
+    print("*"*20)
+else:
+    print("Just broke out of the loop")
+
+# x = 0
+# while x < 10:
+#     print("Value of x is: " + str(x))
+#     x = x + 1
+#
+#     if x == 8:
+#         continue
+#     print("This example is awesome")
+#     print("*"*20)
+#
+# print("Just broke out of the loop")
+
+rangedemo:
+
+"""
+Built-in function
+
+Creates a sequence of numbers but does not save them in memory
+Very useful for generating numbers
+"""
+
+a = range(0, 20, 6)
+print(a)
+print(type(a))
+
+print(list(a))
+
+
+l = [1, 2, 3]
+
+for num in range(1, 4):
+    print(num)
+
+Methods demo:
+
+"""
+A group of code statements which can perform some specific task
+Methods are reusable and can be called when needed in the code
+"""
+def sum_nums(n1, n2):
+    print(n1 + n2)
+
+sum_nums(2, 8)
+
+sum_nums(3, 3)
+
+l = [1, 2, 3]
+print(l.append(4))
+print(l)
+
+print(len(l))
+
+Methods demo2:
+
+"""
+A group of code statements which can perform some specific task
+Methods are reusable and can be called when needed in the code
+"""
+
+def sum_nums(n1, n2):
+    """
+    Get sum of two numbers
+    :param n1:
+    :param n2:
+    :return:
+    """
+    return n1 + n2
+
+sum1 = sum_nums(2, 8)
+
+sum2 =  sum_nums(3, 3)
+
+string_add = sum_nums('one', 2)
+print(string_add)
+
+print(sum1)
+print("*************")
+
+def isMetro(city):
+    l = ['sfo', 'nyc', 'la']
+
+    if city in l:
+        return True
+    else:
+        return False
+
+x = isMetro('boston')
+print(x)
+
+Methods demo3
+
+"""
+Positional Parameters
+They are like optional parameters
+And can be assigned a default value, if no value is provided from outside
+"""
+
+def sum_nums(n1, n2=4):
+    """
+    Get sum of two numbers
+    :param n1:
+    :param n2:
+    :return:
+    """
+    return n1 + n2
+
+sum1 = sum_nums(4, n2=12)
+print(sum1)
+
+Methods demo4:
+
+"""
+Variable Scope
+"""
+
+a = 10
+
+def test_method(a):
+    print("Value of local 'a' is: " + str(a))
+    a = 2
+    print("New value of local 'a' is: " + str(a))
+
+print("Value of global 'a' is: " + str(a))
+test_method(a)
+print("Did the value of global 'a' change? " + str(a))
+
+a = 10
+
+def test_method():
+    global a
+    print("Value of 'a' inside the method is: " + str(a))
+    a = 2
+    print("New value of 'a' inside the method is changed to: " + str(a))
+
+print("Value of global a is: " + str(a))
+test_method()
+print("Did the value of global 'a' change? " + str(a))
+
+Buildin functions:
+
+"""
+Some built-in functions
+max(): It takes any number of arguments and returns the largest one.
+
+min(): It takes any number of arguments and returns the smallest one.
+
+abs(): It returns the absolute value of the number, that number's distance from 0.
+It always returns a positive value and it only takes a single number.
+
+type(): It returns the type of the data it receives as an argument.
+"""
+
+def largest_num(*args):
+    print(max(args))
+    return(max(args))
+
+largest_num(-20, -10, 0, 10, 100)
+
+def smallest_num(*args):
+    print(min(args))
+
+smallest_num(-20, -10, 0, 10, 100)
+
+def abs_function(a):
+    print(abs(a))
+
+abs_function(-20)
+abs_function(20)
+
+print("**********")
+
+print(type(99))
+print(type(99.9))
+print(type("99.9"))
+l = [1, 2, 3]
+print(type(l))
+
+Methods exercise:
+
+"""
+Methods Exercise
+Create a method, which takes the state and gross income as the arguments and returns the net income after deducting tax based on the state.
+
+Assume Federal Tax: 10%
+Assume state tax on your wish.
+
+You don’t have to do for all the states, just take 3-4 to solve the purpose of the exercise.
+"""
+
+def calculateNetIncome(gross, state):
+    """
+    Calculate the net income after federal and state tax
+    :param gross: Gross Income
+    :param state: State Name
+    :return: Net Income
+    """
+    state_tax = {'CA': 10, 'NY': 9, 'TX': 0, 'NJ': 6}
+
+    # Calculate net income after federal tax
+    net = gross - (gross * .10)
+
+    # Calculate net income after state tax
+    if state in state_tax:
+        net = net - (gross * state_tax[state] / 100)
+        print("Your net income after all the heavy taxes is: " + str(net))
+        return net
+    else:
+        print("State not in the list")
+        return None
+
+
+calculateNetIncome(100000, 'CA')
+
+Classdemo1:
+
+"""
+Object Oriented Programming
+"""
+
+s = "this is a string"
+a = "one more string"
+s.upper()
+s.lower()
+
+print(type('s'))
+print(type('a'))
+print(type([1, 2, 3]))
+
+Classdemo2:
+
+"""
+Object Oriented Programming
+"""
+
+class Car(object):
+
+    def __init__(self, make, model="550i"):
+        self.make = make
+        self.model = model
+
+c1 = Car('bmw')
+print(c1.make)
+print(c1.model)
+
+c2 = Car('benz')
+print(c2.make)
+print(c2.model)
+
+classdemo3:
+
+"""
+Object Oriented Programming
+"""
+
+class Car(object):
+
+    wheels = 4
+
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def info(self):
+        print("Make of the car: " + self.make)
+        print("Model of the car: " + self.model)
+
+
+
+c1 = Car('bmw', '550i')
+print(c1.make)
+#c1.info()
+
+c2 = Car('benz', 'E350')
+print(c2.make)
+#c2.info()
+
+print(Car.wheels)
+
+Class demo inheritance:
+
+
+class Car(object):
+
+    def __init__(self):
+        print("You just created the car instance")
+
+    def drive(self):
+        print("Car started...")
+
+    def stop(self):
+        print("Car stopped")
+
+class BMW(Car):
+
+    def __init__(self):
+        Car.__init__(self)
+        print("You just created the BMW instance")
+
+
+
+c = Car()
+c.drive()
+c.stop()
+
+b = BMW()
+b.drive()
+b.stop()
+
+
+Classdemo inheritance 2:
+
+
+class Car(object):
+
+    def __init__(self):
+        print("You just created the car instance")
+
+    def drive(self):
+        print("Car started...")
+
+    def stop(self):
+        print("Car stopped")
+
+class BMW(Car):
+
+    def __init__(self):
+        Car.__init__(self)
+        print("You just created the BMW instance")
+
+    def drive(self):
+        super(BMW, self).drive()
+        print("You are driving a BMW, Enjoy...")
+
+    def headsup_display(self):
+        print("This is a unique feature")
+
+c = Car()
+c.drive()
+c.stop()
+
+b = BMW()
+b.drive()
+b.stop()
+b.headsup_display()
+
+
+Class exercise:
+
+
+class Fruit(object):
+
+    def __init__(self):
+        print("I am a fruit")
+
+    def nutrition(self):
+        print("I am full of vitamins")
+
+    def fruit_shape(self):
+        print("Every fruit can have different shape")
+
+class Orange(Fruit):
+
+    def __init__(self):
+        Fruit.__init__(self)
+        print("I am Orange")
+
+    def nutrition(self):
+        print("I am full of vitamin c")
+
+    def color(self):
+        print("I keep it simple, the color is also orange")
+
+f = Fruit()
+f.nutrition()
+f.fruit_shape()
+
+o = Orange()
+o.nutrition()
+o.fruit_shape()
+o.color()
+
+Exception handling:
+
+"""
+Exceptions are errors
+We should handle exceptions in our code
+to make sure the code is working the way we want and is handling all the unwanted issues
+Link to 3.5 built-in exceptions - https://docs.python.org/3/library/exceptions.html
+"""
+
+def exceptionHandling():
+    try:
+        a = 10
+        b = 20
+        c = 0
+
+        d = (a + b) / c
+        print(d)
+    # except ZeroDivisionError:
+    #     print("Zero Division")
+    # except TypeError:
+    #     print("Can't add string to integer")
+    except:
+        print("In the except block")
+
+exceptionHandling()
+
+exception handling 2:
+
+"""
+Exceptions are errors
+"""
+
+def exceptionHandling():
+    try:
+        a = 10
+        b = 20
+        c = 0
+
+        d = (a + b) / c
+        print(d)
+    except:
+        print("In the except block")
+    else:
+        print("Because there was no exception, else is executed")
+    finally:
+        print("Finally, always executed")
+
+exceptionHandling()
+
+Exception handling homework:
+
+def exceptionHandling():
+    try:
+        car = {"make": "bmw", "model": "550i", "year": "2016"}
+        print(car["color"])
+    except:
+        print("Key not found")
+    finally:
+        print("Please try a different key")
+
+exceptionHandling()
+
+Modules demo 1:
+
+"""
+https://docs.python.org/3/library/
+"""
+import math
+from math import sqrt
+
+class ModulesDemo():
+
+    def builtin_modules(self):
+        print(math.sqrt(100))
+        print(sqrt(100))
+
+
+m = ModulesDemo()
+m.builtin_modules()
+
+Cars1:
+
+"""
+This is our own module which does not exist in python builtins
+"""
+
+def info(make, model):
+    print("Make of the car: " + make)
+    print("Model of the car: " + model)
+
+
+
+filedemo:
+
+"""
+File I/O
+'w' -> Write-Only Mode
+'r' -> Read-only Mode
+'r+' -> Read And Write Mode
+'a' -> Append Mode
+"""
+
+my_list = [1, 2, 3]
+
+my_file = open("firstfile.txt", "w")
+
+for item in my_list:
+    my_file.write(str(item) + "\n")
+
+my_file.close()
+
+withasdemo:
+
+"""
+With / As Keywords
+"""
+# print("Normal Write Start")
+# my_write = open("textfile.txt", "w")
+# my_write.write("Trying to write to the file")
+# my_write.close()
+#
+#
+# print("Normal Read Start")
+# my_read = open("textfile.txt", "r")
+# print(str(my_read.read()))
+
+print("With As Write Start")
+with open("withas.txt", "w") as with_as_write:
+    with_as_write.write("This is an example of with as write/read")
+
+print()
+print("With As Read Start")
+with open("withas.txt", "r") as with_as_read:
+    print(str(with_as_read.read()))
+
+
+
+Running Test:
+
+from selenium import webdriver
+
+class RunFFTests():
+
+    def test(self):
+        # Instantiate FF Browser Command
+        driver = webdriver.Firefox()
+        # Open the provided URL
+        driver.get("http://www.letskodeit.com")
+
+ff = RunFFTests()
+ff.test()
+
+
+Chrome:
+
+from selenium import webdriver
+import os
+
+class RunChromeTests():
+    # http://chromedriver.storage.googleapis.com/index.html
+
+    def test(self):
+        driverLocation = "/Users/atomar/Documents/workspace_personal/selenium/chromedriver"
+        os.environ["webdriver.chrome.driver"] = driverLocation
+        # Instantiate Chrome Browser Command
+        driver = webdriver.Chrome(driverLocation)
+        # Open the provided URL
+        driver.get("http://www.letskodeit.com")
+
+ff = RunChromeTests()
+ff.test()
+
+RunChromeTestwindows:
+
+from selenium import webdriver
+import os
+
+class RunChromeTestsWindows():
+    # https://sites.google.com/a/chromium.org/chromedriver/downloads
+    # http://chromedriver.storage.googleapis.com/index.html?path=2.21/
+    def test(self):
+        driverLocation = "C:\\Users\\Anil Tomar\\PycharmProjects\\libs\\chromedriver.exe"
+        os.environ["webdriver.chrome.driver"] = driverLocation
+        driver = webdriver.Chrome(driverLocation)
+        driver.get("http://www.letskodeit.com")
+
+chromeTest = RunChromeTestsWindows()
+chromeTest.test()
+
+IE tests:
+
+from selenium import webdriver
+import os
+
+class RunIETestsWindows():
+
+    def test(self):
+        driverLocation = "C:\\Users\\Anil Tomar\\PycharmProjects\\libs\\IEDriverServer.exe"
+        os.environ["webdriver.ie.driver"] = driverLocation
+        driver = webdriver.Ie(driverLocation)
+        driver.get("http://www.letskodeit.com")
+
+ieTest = RunIETestsWindows()
+ieTest.test()
+
+Safari:
+
+from selenium import webdriver
+import os
+
+class RunSafariTests():
+    # https://github.com/SeleniumHQ/selenium/wiki/SafariDriver
+    # http://selenium-release.storage.googleapis.com/index.html
+
+    def test(self):
+        serverLocation = "/Users/atomar/Documents/workspace_personal/selenium/selenium-server-standalone-2.53.0.jar"
+        os.environ["SELENIUM_SERVER_JAR"] = serverLocation
+        # Instantiate Safari Browser Command
+        driver = webdriver.Safari(quiet=True)
+        # Open the provided URL
+        driver.get("http://www.letskodeit.com")
+
+safari = RunSafariTests()
+safari.test()
+
+Findbyidname:
+
+from selenium import webdriver
+
+class FindByIdName():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.get(baseUrl)
+        elementById = driver.find_element_by_id("name")
+
+        if elementById is not None:
+            print("We found an element by Id")
+
+        elementByName = driver.find_element_by_name("show-hide")
+
+        if elementByName is not None:
+            print("We found an element by Name")
+
+ff = FindByIdName()
+ff.test()
+
+FindByidName:
+
+from selenium import webdriver
+
+class FindByIdName():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.get(baseUrl)
+        elementById = driver.find_element_by_id("name")
+
+        if elementById is not None:
+            print("We found an element by Id")
+
+        elementByName = driver.find_element_by_name("show-hide")
+
+        if elementByName is not None:
+            print("We found an element by Name")
+
+        driver.get("https://www.yahoo.com/")
+        # This one should fail because the Id is not static
+        # Exception thrown: NoSuchElementException
+        driver.find_element_by_id("yui_3_18_0_4_1463100170626_1148")
+
+ff = FindByIdName()
+ff.test()
+
+
+Xpath:
+
+from selenium import webdriver
+
+class FindByXPathCSS():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.get(baseUrl)
+        elementByXpath = driver.find_element_by_xpath("//input[@id='name']")
+
+        if elementByXpath is not None:
+            print("We found an element by XPATH")
+
+        elementByCss = driver.find_element_by_css_selector("#displayed-text")
+
+        if elementByCss is not None:
+            print("We found an element by CSS")
+
+ff = FindByXPathCSS()
+ff.test()
+
+
+Linktext:
+
+from selenium import webdriver
+
+
+class FindByLinkText():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.get(baseUrl)
+
+        elementByLinkText = driver.find_element_by_link_text("Login")
+
+        if elementByLinkText is not None:
+            print("We found an element by Link Text")
+
+        elementByPartialLinkText = driver.find_element_by_partial_link_text("Pract")
+
+        if elementByPartialLinkText is not None:
+            print("We found an element by Partial Link Text")
+
+ff = FindByLinkText()
+ff.test()
+
+ByClasstag:
+
+from selenium import webdriver
+
+class FindByClassTag():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.get(baseUrl)
+
+        elementByClassName = driver.find_element_by_class_name("displayed-class")
+        elementByClassName.send_keys("Testing The Element")
+
+        if elementByClassName is not None:
+            print("We found an element by Class Name")
+
+        elementByTagName = driver.find_element_by_tag_name("h1")
+        text = elementByTagName.text
+
+        if elementByTagName is not None:
+            print("We found an element by Tag Name and the text on element is: " + text)
+
+ff = FindByClassTag()
+ff.test()
+
+
+Bydemo:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+class ByDemo():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.get(baseUrl)
+
+        elementById = driver.find_element(By.ID, "name")
+
+        if elementById is not None:
+            print("We found an element by Id")
+
+        elementByXpath = driver.find_element(By.XPATH, "//input[@id='displayed-text']")
+
+        if elementByXpath is not None:
+            print("We found an element by XPATH")
+
+        elementByLinkText = driver.find_element(By.LINK_TEXT, "Login")
+
+        if elementByLinkText is not None:
+            print("We found an element by Link Text")
+
+ff = ByDemo()
+ff.test()
+
+Listofelements:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+class ListOfElements():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.get(baseUrl)
+
+        elementListByClassName = driver.find_elements_by_class_name("inputs")
+        length1 = len(elementListByClassName)
+
+        if elementListByClassName is not None:
+            print("ClassName -> Size of the list is: " + str(length1))
+
+        elementListByTagName = driver.find_elements(By.TAG_NAME, "td")
+        length2 = len(elementListByTagName)
+
+        if elementListByTagName is not None:
+            print("TagName -> Size of the list is: " + str(length2))
+
+ff = ListOfElements()
+ff.test()
+
+
+Browser interactions:
+
+from selenium import webdriver
+
+class BrowserInteractions():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+
+        # Window Maximize
+        driver.maximize_window()
+        # Open the Url
+        driver.get(baseUrl)
+        # Get Title
+        title = driver.title
+        print("Title of the web page is: " + title)
+        # Get Current Url
+        currentUrl = driver.current_url
+        print("Current Url of the web page is: " + currentUrl)
+        # Browser Refresh
+        driver.refresh()
+        print("Browser Refreshed 1st time")
+        driver.get(driver.current_url)
+        print("Browser Refreshed 2nd time")
+        # Open another Url
+        driver.get("https://sso.teachable.com/secure/42299/users/sign_in?reset_purchase_session=1")
+        currentUrl = driver.current_url
+        print("Current Url of the web page is: " + currentUrl)
+        # Browser Back
+        driver.back()
+        print("Go one step back in browser history")
+        currentUrl = driver.current_url
+        print("Current Url of the web page is: " + currentUrl)
+        # Browser Forward
+        driver.forward()
+        print("Go one step forward in browser history")
+        currentUrl = driver.current_url
+        print("Current Url of the web page is: " + currentUrl)
+        # Get Page Source
+        pageSource = driver.page_source
+        print(pageSource)
+        # Browser Close / Quit
+        # driver.close()
+        driver.quit()
+
+ff = BrowserInteractions()
+ff.test()
+
+Click and Send:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class ClickAndSendKeys():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(10)
+
+        loginLink = driver.find_element(By.XPATH, "//div[@id='navbar']//a[@href='/sign_in']")
+        loginLink.click()
+
+        emailField = driver.find_element(By.ID, "user_email")
+        emailField.send_keys("test")
+
+        passwordField = driver.find_element(By.ID, "user_password")
+        passwordField.send_keys("test")
+
+        time.sleep(3)
+
+        emailField.clear()
+
+        time.sleep(3)
+
+        emailField.send_keys("test")
+
+
+
+ff = ClickAndSendKeys()
+ff.test()
+
+
+Element state:
+
+from selenium import webdriver
+
+class ElementState():
+
+    def isEnabled(self):
+        baseUrl = "http://www.google.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        e1 = driver.find_element_by_id("gs_htif0")
+        e1State = e1.is_enabled() # True for enabled and False for disabled
+        print("E1 is Enabled? -> " + str(e1State))
+
+        e2 = driver.find_element_by_id("gs_taif0")
+        e2State = e2.is_enabled()  # True for enabled and False for disabled
+        print("E2 is Enabled? -> " + str(e2State))
+
+        e3 = driver.find_element_by_id("lst-ib")
+        e3State = e3.is_enabled()  # True for enabled and False for disabled
+        print("E3 is Enabled? -> " + str(e3State))
+
+        e3.send_keys("letskodeit")
+
+
+
+e = ElementState()
+e.isEnabled()
+
+
+Radio buttons and Check boxes:
+
+from selenium import webdriver
+import time
+
+class RadioButtonsAndCheckboxes():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(10)
+
+        bmwRadioBtn = driver.find_element_by_id("bmwradio")
+        bmwRadioBtn.click()
+
+        time.sleep(2)
+        benzRadioBtn = driver.find_element_by_id("benzradio")
+        benzRadioBtn.click()
+
+        time.sleep(2)
+        bmwCheckbox = driver.find_element_by_id("bmwcheck")
+        bmwCheckbox.click()
+
+        time.sleep(2)
+        benzCheckbox = driver.find_element_by_id("benzcheck")
+        benzCheckbox.click()
+
+        print("BMW Radio button is selected? " + str(bmwRadioBtn.is_selected())) # True if selected, False is not selected
+        print("Benz Radio button is selected? " + str(benzRadioBtn.is_selected()))
+        print("BMW Checkbox is selected? " + str(bmwCheckbox.is_selected()))
+        print("Benz Checkbox is selected? " + str(benzCheckbox.is_selected()))
+
+ff = RadioButtonsAndCheckboxes()
+ff.test()
+
+
+Working with element list:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class WorkingWithElementsList():
+
+    def testListOfElements(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(10)
+
+        radioButtonsList = driver.find_elements(
+            By.XPATH, "//input[contains(@type,'radio') and contains(@name,'cars')]")
+        size = len(radioButtonsList)
+        print("Size of the list: " + str(size))
+
+        for radioButton in radioButtonsList:
+            isSelected = radioButton.is_selected()
+
+            if not isSelected:
+                radioButton.click()
+                time.sleep(2)
+
+ff = WorkingWithElementsList()
+ff.testListOfElements()
+
+Dropdownselect:
+
+from selenium import webdriver
+import time
+from selenium.webdriver.support.select import Select
+
+class DropdownSelect():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(10)
+
+        element = driver.find_element_by_id("carselect")
+        sel = Select(element)
+
+        sel.select_by_value("benz")
+        print("Select Benz by value")
+        time.sleep(2)
+
+        sel.select_by_index("2")
+        print("Select Honda by index")
+        time.sleep(2)
+
+        sel.select_by_visible_text("BMW")
+        print("Select BMW by visible text")
+        time.sleep(2)
+
+        sel.select_by_index(2)
+        print("Select Honda by index")
+
+
+ff = DropdownSelect()
+ff.test()
+
+
+Hiddenelements:
+
+from selenium import webdriver
+import time
+
+class HiddenElements():
+
+    def testLetsKodeIt(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(2)
+
+
+        # Find the state of the text box
+        textBoxElement = driver.find_element_by_id("displayed-text")
+        textBoxState = textBoxElement.is_displayed() # True if visible, False if hidden
+        # Exception if not present in the DOM
+        print("Text is visible? " + str(textBoxState))
+        time.sleep(2)
+
+        # Click the Hide button
+        driver.find_element_by_id("hide-textbox").click()
+        # Find the state of the text box
+        textBoxState = textBoxElement.is_displayed()
+        print("Text is visible? " + str(textBoxState))
+        time.sleep(2)
+
+        # Added code to scroll up because the element was hiding behind the top navigation menu
+	# You will learn about scrolling in future lecture
+        driver.execute_script("window.scrollBy(0, -150);")
+        # Click the Show button
+        driver.find_element_by_id("show-textbox").click()
+        # Find the state of the text box
+        textBoxState = textBoxElement.is_displayed()
+        print("Text is visible? " + str(textBoxState))
+        time.sleep(2)
+        # Browser Close
+        driver.quit()
+
+    def testExpedia(self):
+        baseUrl = "http://www.expedia.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        driver.find_element_by_id("tab-flight-tab").click()
+
+        drpdwnElement = driver.find_element_by_id("flight-age-select-1")
+        print("Element visible? " + str(drpdwnElement.is_displayed()))
+
+
+ff = HiddenElements()
+ff.testLetsKodeIt()
+ff.testExpedia()
+
+airbnb:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+# from selenium.webdriver.support.select import Select
+
+class AirbnbExercise1():
+
+    def test(self):
+        baseUrl = "https://www.airbnb.com/"
+        driver = webdriver.Firefox()
+        #driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(10)
+
+        # Elements and design has changed on Airbnb website after the lecture was made
+        searchBox = driver.find_element(By.NAME, "location")
+        searchBox.send_keys("Hawaii")
+
+        when = driver.find_element(By.XPATH,
+                                   "(//button//span[text()='Anytime'])[2]")
+        when.click()
+        time.sleep(2)
+
+        checkin = driver.find_element(By.XPATH,
+                                      "(//div[contains(@class,'CalendarMonth') and @data-visible='true']//div[text()='30']//parent::button)[1]")
+        checkin.click()
+
+        checkout = driver.find_element(By.XPATH,
+                                      "(//div[contains(@class,'CalendarMonth') and @data-visible='true']//div[text()='30']//parent::button)[2]")
+        checkout.click()
+
+        showInstant = driver.find_elements(By.XPATH, "//span[text()='Show Instant Book Listings']")
+        if len(showInstant) > 0:
+            showInstant[0].click()
+
+        dropdownElement = driver.find_element(By.XPATH,
+                                              "(//span[text()='1 guest'])[2]")
+        #sel = Select(dropdownElement)
+        #sel.select_by_visible_text("2 Guests")
+        # It is updated to <button> tag
+        # We can only use Select Class with <select> tag
+        dropdownElement.click()
+        adultPlusButton = driver.find_element(By.XPATH,
+                                              "(//button[@aria-controls='StepIncrementerRow-value-GuestCountFilter-via-SearchBarLarge-adults'])[2]")
+        adultPlusButton.click()
+        # You might have issues because of slow connection that you might not even notice
+        # Try to run files multiple times
+
+        # Search button does not exist on the next page, so we can comment it
+        # time.sleep(2)
+        # This element has changed on Airbnb website after the lecture was made
+        # searchButton = driver.find_element(By.XPATH,
+        #                                    "//button//span[text()='Search']")
+        # searchButton.click()
+
+ff = AirbnbExercise1()
+ff.test()
+
+gettext:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from utilities.handy_wrappers import HandyWrappers
+import time
+
+
+class GetText():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.implicitly_wait(10)
+        driver.get(baseUrl)
+
+        openTabElement = driver.find_element(By.ID, "opentab")
+        elementText = openTabElement.text
+        print("Text on element is: " + elementText)
+        time.sleep(1)
+        driver.quit()
+
+
+ff = GetText()
+ff.test()
+
+getAttribute:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+
+class GetAttribute():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.implicitly_wait(10)
+        driver.get(baseUrl)
+
+        element = driver.find_element_by_id("name")
+        result = element.get_attribute("type")
+
+        print("Value of attribute is: " + result)
+        time.sleep(1)
+        driver.quit()
+
+
+ff = GetAttribute()
+ff.test()
+
+Handywrappers:
+
+from selenium.webdriver.common.by import By
+
+class HandyWrappers():
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "classname":
+            return By.CLASS_NAME
+        elif locatorType == "linktext":
+            return By.LINK_TEXT
+        else:
+            print("Locator type " + locatorType + " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            print("Element Found")
+        except:
+            print("Element not found")
+        return element
+
+
+
+element present check:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from utilities.handy_wrappers import HandyWrappers
+import time
+
+
+class ElementPresentCheck():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.implicitly_wait(10)
+        hw = HandyWrappers(driver)
+        driver.get(baseUrl)
+
+        elementResult1 = hw.isElementPresent("name", By.ID)
+        print(str(elementResult1))
+
+        elementResult2 = hw.elementPresenceCheck("//input[@id='name1']", By.XPATH)
+        print(str(elementResult2))
+
+
+ff = ElementPresentCheck()
+ff.test()
+
+Dynamic xpath format:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from utilities.handy_wrappers import HandyWrappers
+import time
+
+
+class DynamicXPathFormat():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.implicitly_wait(10)
+        driver.get(baseUrl)
+
+        # Login -> Lecture "How to click and type on a web element"
+        driver.find_element(By.LINK_TEXT, "Login").click()
+        email = driver.find_element(By.ID, "user_email")
+        email.send_keys("test@email.com")
+        password = driver.find_element(By.ID, "user_password")
+        password.send_keys("abcabc")
+        driver.find_element(By.NAME, "commit").click()
+
+        # Search for courses -> You don't need to search the course
+        # You can select it without searching also
+        searchBox = driver.find_element(By.ID, "search-courses")
+        searchBox.send_keys("JavaScript")
+
+        # Select Course
+        _course = "//div[contains(@class,'course-listing-title') and contains(text(),'{0}')]"
+        _courseLocator = _course.format("JavaScript for beginners")
+
+        courseElement = driver.find_element(By.XPATH, _courseLocator)
+        courseElement.click()
+
+
+ff = DynamicXPathFormat()
+ff.test()
+
+
+Implicit wait:
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class ImplicitWaitDemo():
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(10)
+
+        loginLink = driver.find_element(By.XPATH, "//div[@id='navbar']//a[@href='/sign_in']")
+        loginLink.click()
+
+        emailField = driver.find_element(By.ID, "user_email")
+        emailField.send_keys("test")
+
+ff = ImplicitWaitDemo()
+ff.test()
+
+
+Explicit wait:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+
+class ExplicitWaitDemo1():
+
+    def test(self):
+        baseUrl = "http://www.expedia.com"
+        driver = webdriver.Firefox()
+        driver.implicitly_wait(.5)
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.find_element(By.ID, "tab-flight-tab").click()
+        driver.find_element(By.ID, "flight-origin").send_keys("SFO")
+        driver.find_element(By.ID, "flight-destination").send_keys("NYC")
+        driver.find_element(By.ID, "flight-departing").send_keys("12/24/2016")
+        returnDate = driver.find_element(By.ID, "flight-returning")
+        returnDate.clear()
+        returnDate.send_keys("12/26/2016")
+        driver.find_element(By.ID, "search-button").click()
+
+        wait = WebDriverWait(driver, 10, poll_frequency=1,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException])
+        element = wait.until(EC.element_to_be_clickable((By.ID,
+                                                         "stopFilter_stops-0")))
+        element.click()
+
+        time.sleep(2)
+        driver.quit()
+
+ff = ExplicitWaitDemo1()
+ff.test()
+
+Handy wrappers:
+
+from selenium.webdriver.common.by import By
+
+class HandyWrappers():
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "classname":
+            return By.CLASS_NAME
+        elif locatorType == "linktext":
+            return By.LINK_TEXT
+        else:
+            print("Locator type " + locatorType + " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            print("Element Found")
+        except:
+            print("Element not found")
+        return element
+
+
+
+Calender selection:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class CalendarSelection():
+
+    def test1(self):
+        baseUrl = "http://www.expedia.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        # Click flights tab
+        driver.find_element_by_id("tab-flight-tab").click()
+        # Find departing field
+        departingField = driver.find_element_by_id("flight-departing")
+        # Click departing field
+        departingField.click()
+        # Find the date to be selected
+        # Expedia website has changed the DOM after the lecture was made
+        # Updated new xpath
+        dateToSelect = driver.find_element(By.XPATH,
+                                           "(//div[@class='datepicker-cal-month'])[1]//button[text()='30']")
+        # Click the date
+        dateToSelect.click()
+
+        time.sleep(3)
+        driver.quit()
+
+ff = CalendarSelection()
+ff.test1()
+
+Calender selection2:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class CalendarSelection():
+
+    def test1(self):
+        baseUrl = "http://www.expedia.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        # Click flights tab
+        driver.find_element_by_id("tab-flight-tab").click()
+        # Find departing field
+        departingField = driver.find_element_by_id("flight-departing")
+        # Click departing field
+        departingField.click()
+        # Find the date to be selected
+        # Expedia website has changed the DOM after the lecture was made
+        # Updated new xpath
+        dateToSelect = driver.find_element(By.XPATH,
+                                           "(//div[@class='datepicker-cal-month'])[1]//button[text()='30']")
+        # Click the date
+        dateToSelect.click()
+
+        time.sleep(3)
+        driver.quit()
+
+    def test2(self):
+        baseUrl = "http://www.expedia.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        # Click flights tab
+        driver.find_element_by_id("tab-flight-tab").click()
+        # Click departing field
+        driver.find_element_by_id("flight-departing").click()
+        # Expedia website has changed the DOM after the lecture was made
+        # Updated new xpath
+        calMonth = driver.find_element(By.XPATH, "(//div[@class='datepicker-cal-month'])[1]")
+        allValidDates = calMonth.find_elements(By.TAG_NAME, "button")
+
+        time.sleep(2)
+
+        for date in allValidDates:
+            if date.text == "30":
+                date.click()
+                break
+
+ff = CalendarSelection()
+ff.test2()
+
+Auto complete:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class AutoComplete():
+
+    def test(self):
+        baseUrl = "http://www.southwest.com"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        # Send Partial Data
+        cityField = driver.find_element_by_id("air-city-departure")
+        cityField.send_keys("New York")
+        time.sleep(3)
+        # Find the item and click
+        itemToSelect = driver.find_element_by_xpath("//ul[@id='air-city-departure-menu']//li[contains(text(),'NJ - EWR')]")
+        itemToSelect.click()
+
+        # time.sleep(3)
+        # driver.quit()
+
+ff = AutoComplete()
+ff.test()
+
+Screenshots:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class Screenshots():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        driver.find_element(By.LINK_TEXT, "Login").click()
+        driver.find_element(By.ID, "user_email").send_keys("abc@email.com")
+        driver.find_element(By.ID, "user_password").send_keys("abc")
+        driver.find_element(By.NAME, "commit").click()
+        destinationFileName = "/Users/atomar/Desktop/test.png" # Mac
+        # destinationFileName = "C:\\atomar\\Desktop" -> Windows
+
+        try:
+            driver.save_screenshot(destinationFileName)
+            print("Screenshot saved to directory --> :: " + destinationFileName)
+        except NotADirectoryError:
+            print("Not a directory issue")
+
+ff = Screenshots()
+ff.test()
+
+
+Screenshots generic:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class Screenshots():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        driver.find_element(By.LINK_TEXT, "Login").click()
+        driver.find_element(By.ID, "user_email").send_keys("abc@email.com")
+        driver.find_element(By.ID, "user_password").send_keys("abc")
+        driver.find_element(By.NAME, "commit").click()
+        self.takeScreenshot(driver)
+
+
+
+    def takeScreenshot(self, driver):
+        """
+        Takes screenshot of the current open web page
+        :param driver
+        :return:
+        """
+        fileName = str(round(time.time() * 1000)) + ".png"
+        screenshotDirectory = "/Users/atomar/desktop/"
+        destinationFile = screenshotDirectory + fileName
+
+        try:
+            driver.save_screenshot(destinationFile)
+            print("Screenshot saved to directory --> :: " + destinationFile)
+        except NotADirectoryError:
+            print("Not a directory issue")
+
+ff = Screenshots()
+ff.test()
+
+Java script execution:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class JavaScriptExecution():
+
+    def test(self):
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        # driver.get("https://letskodeit.teachable.com/pages/practice")
+        driver.execute_script("window.location = 'https://letskodeit.teachable.com/pages/practice';")
+        driver.implicitly_wait(3)
+        time.sleep(6)
+
+        # element = driver.find_element(By.ID, "name")
+        element = driver.execute_script("return document.getElementById('name');")
+        element.send_keys("Test")
+
+ff = JavaScriptExecution()
+ff.test()
+
+
+Windows size:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class WindowSize():
+
+    def test(self):
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get("https://letskodeit.teachable.com/pages/practice")
+        driver.implicitly_wait(3)
+
+
+        height = driver.execute_script("return window.innerHeight;")
+        width = driver.execute_script("return window.innerWidth;")
+        print("Height: " + str(height))
+        print("Width: " + str(width))
+        driver.quit()
+
+
+ff = WindowSize()
+ff.test()
+
+
+Scrolling elements:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class ScrollingElement():
+
+    def test(self):
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get("https://letskodeit.teachable.com/pages/practice")
+        driver.implicitly_wait(3)
+
+
+        # Scroll Down
+        driver.execute_script("window.scrollBy(0, 1000);")
+        time.sleep(3)
+
+        # Scroll Up
+        driver.execute_script("window.scrollBy(0, -1000);")
+        time.sleep(3)
+
+        # Scroll Element Into View
+        element = driver.find_element(By.ID, "mousehover")
+        driver.execute_script("arguments[0].scrollIntoView(true);", element)
+        time.sleep(2)
+        driver.execute_script("window.scrollBy(0, -150);")
+
+        # Native Way To Scroll Element Into View
+        time.sleep(2)
+        driver.execute_script("window.scrollBy(0, -1000);")
+        location = element.location_once_scrolled_into_view
+        print("Location: " + str(location))
+        driver.execute_script("window.scrollBy(0, -150);")
+
+
+
+ff = ScrollingElement()
+ff.test()
+
+
+Switch to window:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class SwitchToWindow():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+
+        # Find parent handle -> Main Window
+        parentHandle = driver.current_window_handle
+        print("Parent Handle: " + parentHandle)
+
+        # Find open window button and click it
+        driver.find_element(By.ID, "openwindow").click()
+        time.sleep(2)
+
+        # Find all handles, there should two handles after clicking open window button
+        handles = driver.window_handles
+
+        # Switch to window and search course
+        for handle in handles:
+            print("Handle: " + handle)
+
+ff = SwitchToWindow()
+ff.test()
+
+switch to window2:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class SwitchToWindow():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+
+        # Find parent handle -> Main Window
+        parentHandle = driver.current_window_handle
+        print("Parent Handle: " + parentHandle)
+
+        # Find open window button and click it
+        driver.find_element(By.ID, "openwindow").click()
+        time.sleep(2)
+
+        # Find all handles, there should two handles after clicking open window button
+        handles = driver.window_handles
+
+        # Switch to window and search course
+        for handle in handles:
+            print("Handle: " + handle)
+            if handle not in parentHandle:
+                driver.switch_to.window(handle)
+                print("Switched to window:: " + handle)
+                searchBox = driver.find_element(By.ID, "search-courses")
+                searchBox.send_keys("python")
+                time.sleep(2)
+                driver.close()
+                break
+
+        # Switch back to the parent handle
+        driver.switch_to.window(parentHandle)
+        driver.find_element(By.ID, "name").send_keys("Test Successful")
+
+
+
+
+
+
+ff = SwitchToWindow()
+ff.test()
+
+
+Switch to frame:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class SwitchToFrame():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.execute_script("window.scrollBy(0, 1000);")
+
+        # Switch to frame using Id
+
+        # Switch to frame using name
+
+        # Switch to frame using numbers
+
+        # Search course
+
+        # Switch back to the parent frame
+        searchBox = driver.find_element(By.ID, "search-courses")
+        searchBox.send_keys("python")
+
+
+ff = SwitchToFrame()
+ff.test()
+
+
+swich to frmae2:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class SwitchToFrame():
+
+    def test(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.execute_script("window.scrollBy(0, 1000);")
+
+        # Switch to frame using Id
+        driver.switch_to.frame("courses-iframe")
+
+        # Switch to frame using name
+        # driver.switch_to.frame("iframe-name")
+
+        # Switch to frame using numbers
+        # driver.switch_to.frame(0)
+
+        time.sleep(2)
+        # Search course
+        searchBox = driver.find_element(By.ID, "search-courses")
+        searchBox.send_keys("python")
+        time.sleep(2)
+
+        # Switch back to the parent frame
+        driver.switch_to.default_content()
+        driver.execute_script("window.scrollBy(0, -1000);")
+        time.sleep(2)
+        driver.find_element(By.ID, "name").send_keys("Test Successful")
+
+
+
+
+ff = SwitchToFrame()
+ff.test()
+
+Alert:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class SwitchToFrame():
+
+    def test1(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+
+
+        driver.find_element(By.ID, "name").send_keys("Anil")
+        driver.find_element(By.ID, "alertbtn").click()
+        time.sleep(2)
+        alert1 = driver.switch_to.alert
+        alert1.accept()
+        time.sleep(2)
+        driver.find_element(By.ID, "name").send_keys("Anil")
+        driver.find_element(By.ID, "confirmbtn").click()
+        time.sleep(2)
+        alert2 = driver.switch_to.alert
+        alert2.dismiss()
+
+
+
+ff = SwitchToFrame()
+ff.test1()
+
+Mouse houvering:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+import time
+
+class MouseHovering():
+
+    def test1(self):
+        baseUrl = "https://letskodeit.teachable.com/pages/practice"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        driver.execute_script("window.scrollBy(0, 600);")
+        time.sleep(2)
+        element = driver.find_element(By.ID, "mousehover")
+        itemToClickLocator = ".//div[@class='mouse-hover-content']//a[text()='Top']"
+        try:
+            actions = ActionChains(driver)
+            actions.move_to_element(element).perform()
+            print("Mouse Hovered on element")
+            time.sleep(2)
+            topLink = driver.find_element(By.XPATH, itemToClickLocator)
+            actions.move_to_element(topLink).click().perform()
+            print("Item Clicked")
+        except:
+            print("Mouse Hover failed on element")
+
+ff = MouseHovering()
+ff.test1()
+
+Drag and Drop:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+import time
+
+class DragAndDrop():
+
+    def test1(self):
+        baseUrl = "https://jqueryui.com/droppable/"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        driver.switch_to.frame(0)
+
+        fromElement = driver.find_element(By.ID, "draggable")
+        toElement = driver.find_element(By.ID, "droppable")
+        time.sleep(2)
+        try:
+            actions = ActionChains(driver)
+            actions.drag_and_drop(fromElement, toElement).perform()
+            # actions.click_and_hold(fromElement).move_to_element(toElement).release().perform()
+            print("Drag And Drop Element Successful")
+            time.sleep(2)
+        except:
+            print("Drag And Drop failed on element")
+
+ff = DragAndDrop()
+ff.test1()
+
+Sliders:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+import time
+
+class Sliders():
+
+    def test1(self):
+        baseUrl = "https://jqueryui.com/slider/"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(3)
+
+        driver.switch_to.frame(0)
+
+        element = driver.find_element(By.XPATH, "//div[@id='slider']//span")
+        time.sleep(2)
+        try:
+            actions = ActionChains(driver)
+            actions.drag_and_drop_by_offset(element, 100, 0).perform()
+            print("Sliding Element Successful")
+            time.sleep(2)
+        except:
+            print("Sliding failed on element")
+
+ff = Sliders()
+ff.test1()
+
+Loggingdemo:
+
+"""
+Logging Demo 1
+Logging Levels
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+"""
+import logging
+
+logging.basicConfig(filename="test.log", level=logging.DEBUG)
+logging.warning("warning message")
+logging.info("info message")
+logging.error("error message")
+
+
+logging-Format:
+
+"""
+Logging Format
+https://docs.python.org/3/library/logging.html#logrecord-attributes
+https://docs.python.org/3/library/time.html#time.strftime
+"""
+import logging
+
+logging.basicConfig(format='%(asctime)s: %(levelname)s: %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p',level=logging.DEBUG)
+logging.warning("warning message")
+logging.info("info message")
+logging.error("error message")
+
+Logging demo console:
+
+"""
+Logger Demo
+"""
+import logging
+
+class LoggerDemoConsole():
+
+    def testLog(self):
+        # create logger
+        logger = logging.getLogger(LoggerDemoConsole.__name__)
+        logger.setLevel(logging.INFO)
+
+        # create console handler and set level to info
+        consoleHandler = logging.StreamHandler()
+        consoleHandler.setLevel(logging.INFO)
+
+        # create formatter
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p')
+
+        # add formatter to console handler
+        consoleHandler.setFormatter(formatter)
+
+        # add console handler to logger
+        logger.addHandler(consoleHandler)
+
+        # logging messages
+        logger.debug('debug message')
+        logger.info('info message')
+        logger.warn('warn message')
+        logger.error('error message')
+        logger.critical('critical message')
+
+demo = LoggerDemoConsole()
+demo.testLog()
+
+Logging demo 2:
+
+import logging
+import loggingpackage.custom_logger as cl
+
+class LoggingDemo2():
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def method1(self):
+        self.log.debug('debug message')
+        self.log.info('info message')
+        self.log.warn('warn message')
+        self.log.error('error message')
+        self.log.critical('critical message')
+
+    def method2(self):
+        m2Log = cl.customLogger(logging.INFO)
+        m2Log.debug('debug message')
+        m2Log.info('info message')
+        m2Log.warn('warn message')
+        m2Log.error('error message')
+        m2Log.critical('critical message')
+
+    def method3(self):
+        m3Log = cl.customLogger(logging.INFO)
+        m3Log.debug('debug message')
+        m3Log.info('info message')
+        m3Log.warn('warn message')
+        m3Log.error('error message')
+        m3Log.critical('critical message')
+
+demo = LoggingDemo2()
+demo.method1()
+demo.method2()
+demo.method3()
+
+Test case demo-1:
+
+import unittest
+
+class TestCaseDemo1(unittest.TestCase):
+
+    def setUp(self):
+        print("I will run once before every testdemo")
+
+    def test_methodA(self):
+        print("Running method A")
+
+    def test_methodB(self):
+        print("Running method B")
+
+    def tearDown(self):
+        print("I will run after every testdemo")
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
+
+Test case demo2:
+
+import unittest
+
+class TestCaseDemo2(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        print("*#" * 30)
+        print("I will run only once before all tests")
+        print("*#" * 30)
+
+    def setUp(self):
+        print("I will run once before every testdemo")
+
+    def test_methodA(self):
+        print("Running method A")
+
+    def test_methodB(self):
+        print("Running method B")
+
+    def tearDown(self):
+        print("I will run after every testdemo")
+
+    @classmethod
+    def tearDownClass(cls):
+        print("*#" * 30)
+        print("I will run only once after all tests")
+        print("*#" * 30)
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
+
+
+Assest demo:
+
+"""
+https://docs.python.org/3/library/unittest.html#unittest.TestCase
+"""
+import unittest
+
+class AssertDemo(unittest.TestCase):
+
+    def test_assertTrueFalse(self):
+        a = True
+        self.assertTrue(a, "a is not false")
+        b = False
+        self.assertFalse(b, "b is not true")
+
+    def test_assertEqual(self):
+        a = "Test"
+        b = "Test"
+        self.assertEqual(a, b, msg="'a' is not equal to 'b'")
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
+
+
+test calss 1:
+
+"""
+Just follow this link to see how you can add PYTHONPATH to environment variable
+
+Windows:
+http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7
+
+Mac:
+http://stackoverflow.com/questions/3387695/add-to-python-path-mac-os-x
+"""
+import unittest
+
+class TestClass1(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        print("*#" * 30)
+        print("Class 1 -> class level setUp")
+        print("*#" * 30)
+
+    def setUp(self):
+        print("Class 1 -> setUp")
+
+    def test_class1_methodA(self):
+        print("Running class 1 -> method A")
+
+    def test_class1_methodB(self):
+        print("Running class 1 -> method B")
+
+    def tearDown(self):
+        print("Class 1 -> tearDown")
+
+    @classmethod
+    def tearDownClass(cls):
+        print("*#" * 30)
+        print("Class 1 -> class level tearDown")
+        print("*#" * 30)
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
+
+test suit demo:
+
+import unittest
+from unittestpackage.test_class1 import TestClass1
+from unittestpackage.test_class2 import TestClass2
+
+# Get all tests from TestClass1 and TestClass2
+tc1 = unittest.TestLoader().loadTestsFromTestCase(TestClass1)
+tc2 = unittest.TestLoader().loadTestsFromTestCase(TestClass2)
+
+# Create a test suite combining TestClass1 and TestClass2
+smokeTest = unittest.TestSuite([tc1, tc2])
+
+unittest.TextTestRunner(verbosity=2).run(smokeTest)
+
+test case demo 1:
+
+import pytest
+
+@pytest.fixture()
+def setUp():
+    print("Running demo1 setUp")
+
+def test_demo1_methodA(setUp):
+    print("Running demo1 method A")
+
+def test_demo1_methodB(setUp):
+    print("Running demo1 method B")
+
+
+testcase demo2:
+
+import pytest
+@pytest.yield_fixture()
+def setUp():
+    print("Running demo2 setUp")
+    yield
+    print("Running demo2 tearDown")
+
+def test_demo2_methodA(setUp):
+    print("Running demo2 method A")
+
+def test_demo2_methodB(setUp):
+    print("Running demo2 method B")
+
+test case demo 3:
+
+"""
+file name should start with test
+test method name should start with test
+
+py.test test_mod.py   # run tests in module
+py.test somepath      # run all tests below somepath
+py.test test_module.py::test_method  # only run test_method in test_module
+
+-s to print statements
+-v verbose
+"""
+
+import pytest
+
+@pytest.yield_fixture()
+def setUp():
+    print("Running demo3 setUp")
+    yield
+    print("Running demo3 tearDown")
+
+def test_demo3_methodA(setUp):
+    print("Running demo3 method A")
+
+def test_demo3_methodB(setUp):
+    print("Running demo3 method B")
+
+conftest:
+
+import pytest
+
+@pytest.yield_fixture()
+def setUp():
+    print("Running method level setUp")
+    yield
+    print("Running method level tearDown")
+
+
+@pytest.yield_fixture(scope="module")
+def oneTimeSetUp():
+    print("Running conftest demo one time setUp")
+    yield
+    print("Running conftest demo one time tearDown")
+
+
+confest2:
+
+import pytest
+
+@pytest.yield_fixture()
+def setUp():
+    print("Running method level setUp")
+    yield
+    print("Running method level tearDown")
+
+
+@pytest.yield_fixture(scope="module")
+def oneTimeSetUp():
+    print("Running conftest demo one time setUp")
+    yield
+    print("Running conftest demo one time tearDown")
+
+confext3:
+import pytest
+
+@pytest.yield_fixture()
+def setUp():
+    print("Running method level setUp")
+    yield
+    print("Running method level tearDown")
+
+
+@pytest.yield_fixture(scope="module")
+def oneTimeSetUp(browser, osType):
+    print("Running one time setUp")
+    if browser == 'firefox':
+        print("Running tests on FF")
+    else:
+        print("Running tests on chrome")
+    yield
+    print("Running one time tearDown")
+
+def pytest_addoption(parser):
+    parser.addoption("--browser")
+    parser.addoption("--osType", help="Type of operating system")
+
+@pytest.fixture(scope="session")
+def browser(request):
+    return request.config.getoption("--browser")
+
+@pytest.fixture(scope="session")
+def osType(request):
+    return request.config.getoption("--osType")
+
+
+confext 4:
+
+import pytest
+
+@pytest.yield_fixture()
+def setUp():
+    print("Running method level setUp")
+    yield
+    print("Running method level tearDown")
+
+
+@pytest.yield_fixture(scope="class")
+def oneTimeSetUp(browser):
+    print("Running one time setUp")
+    if browser == 'firefox':
+        print("Running tests on FF")
+    else:
+        print("Running tests on chrome")
+    yield
+    print("Running one time tearDown")
+
+def pytest_addoption(parser):
+    parser.addoption("--browser")
+    parser.addoption("--osType", help="Type of operating system")
+
+@pytest.fixture(scope="session")
+def browser(request):
+    return request.config.getoption("--browser")
+
+@pytest.fixture(scope="session")
+def osType(request):
+    return request.config.getoption("--osType")
+
+
+Conftest:
+
+import pytest
+
+@pytest.yield_fixture()
+def setUp():
+    print("Running method level setUp")
+    yield
+    print("Running method level tearDown")
+
+
+@pytest.yield_fixture(scope="class")
+def oneTimeSetUp(request, browser):
+    print("Running one time setUp")
+    if browser == 'firefox':
+        value = 10
+        print("Running tests on FF")
+    else:
+        value = 20
+        print("Running tests on chrome")
+
+    if request.cls is not None:
+        request.cls.value = value
+
+    yield value
+    print("Running one time tearDown")
+
+def pytest_addoption(parser):
+    parser.addoption("--browser")
+    parser.addoption("--osType", help="Type of operating system")
+
+@pytest.fixture(scope="session")
+def browser(request):
+    return request.config.getoption("--browser")
+
+@pytest.fixture(scope="session")
+def osType(request):
+    return request.config.getoption("--osType")
+
+confetest:
+
+import pytest
+
+@pytest.yield_fixture()
+def setUp():
+    print("Running method level setUp")
+    yield
+    print("Running method level tearDown")
+
+
+@pytest.yield_fixture(scope="class")
+def oneTimeSetUp(request, browser):
+    print("Running one time setUp")
+    if browser == 'firefox':
+        value = 10
+        print("Running tests on FF")
+    else:
+        value = 20
+        print("Running tests on chrome")
+
+    if request.cls is not None:
+        request.cls.value = value
+
+    yield value
+    print("Running one time tearDown")
+
+def pytest_addoption(parser):
+    parser.addoption("--browser")
+    parser.addoption("--osType", help="Type of operating system")
+
+@pytest.fixture(scope="session")
+def browser(request):
+    return request.config.getoption("--browser")
+
+@pytest.fixture(scope="session")
+def osType(request):
+    return request.config.getoption("--osType")
+
+
+Confest:
+
+import pytest
+
+@pytest.yield_fixture()
+def setUp():
+    print("Running method level setUp")
+    yield
+    print("Running method level tearDown")
+
+
+@pytest.yield_fixture(scope="class")
+def oneTimeSetUp(request, browser):
+    print("Running one time setUp")
+    if browser == 'firefox':
+        value = 10
+        print("Running tests on FF")
+    else:
+        value = 20
+        print("Running tests on chrome")
+
+    if request.cls is not None:
+        request.cls.value = value
+
+    yield value
+    print("Running one time tearDown")
+
+def pytest_addoption(parser):
+    parser.addoption("--browser")
+    parser.addoption("--osType", help="Type of operating system")
+
+@pytest.fixture(scope="session")
+def browser(request):
+    return request.config.getoption("--browser")
+
+@pytest.fixture(scope="session")
+def osType(request):
+    return request.config.getoption("--osType")
+
+3-Login tests:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+class LoginTests():
+
+    def test_validLogin(self):
+        baseURL = "https://letskodeit.teachable.com/"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.implicitly_wait(3)
+        driver.get(baseURL)
+
+        loginLink = driver.find_element(By.LINK_TEXT, "Login")
+        loginLink.click()
+
+        emailField = driver.find_element(By.ID, "user_email")
+        emailField.send_keys("test@email.com")
+
+        passwordField = driver.find_element(By.ID, "user_password")
+        passwordField.send_keys("abcabc")
+
+        loginButton = driver.find_element(By.NAME, "commit")
+        loginButton.click()
+
+        userIcon = driver.find_element(By.XPATH, ".//*[@id='navbar']//span[text()='User Settings']")
+        if userIcon is not None:
+            print("Login Successful")
+        else:
+            print("Login Failed")
+
+ff = LoginTests()
+ff.test_validLogin()
+
+4 = login tests:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from pages.home.login_page import LoginPage
+import unittest
+
+class LoginTests(unittest.TestCase):
+
+    def test_validLogin(self):
+        baseURL = "https://letskodeit.teachable.com/"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.implicitly_wait(3)
+        driver.get(baseURL)
+
+        lp = LoginPage(driver)
+        lp.login("test@email.com", "abcabc")
+
+
+        userIcon = driver.find_element(By.XPATH, ".//*[@id='navbar']//span[text()='User Settings']")
+        if userIcon is not None:
+            print("Login Successful")
+        else:
+            print("Login Failed")
+
+5 - login page:
+
+from selenium.webdriver.common.by import By
+
+class LoginPage():
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    # Locators
+    _login_link = "Login"
+    _email_field = "user_email"
+    _password_field = "user_password"
+    _login_button = "commit"
+
+    def getLoginLink(self):
+        return self.driver.find_element(By.LINK_TEXT, self._login_link)
+
+    def getEmailField(self):
+        return self.driver.find_element(By.ID, self._email_field)
+
+    def getPasswordField(self):
+        return self.driver.find_element(By.ID, self._password_field)
+
+    def getLoginButton(self):
+        return self.driver.find_element(By.NAME, self._login_button)
+
+    def clickLoginLink(self):
+        self.getLoginLink().click()
+
+    def enterEmail(self, email):
+        self.getEmailField().send_keys(email)
+
+    def enterPassword(self, password):
+        self.getPasswordField().send_keys(password)
+
+    def clickLoginButton(self):
+        self.getLoginButton().click()
+
+    def login(self, email, password):
+        self.clickLoginLink()
+        self.enterEmail(email)
+        self.enterPassword(password)
+        self.clickLoginButton()
+
+6 - selenium driver:
+
+from selenium.webdriver.common.by import By
+from traceback import print_stack
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+
+class SeleniumDriver():
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "classname":
+            return By.CLASS_NAME
+        elif locatorType == "linktext":
+            return By.LINK_TEXT
+        else:
+            print("Locator type " + locatorType + " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            print("Element Found")
+        except:
+            print("Element not found")
+        return element
+
+    def elementClick(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.click()
+            print("Clicked on element with locator: " + locator + " locatorType: " + locatorType)
+        except:
+            print("Cannot click on the element with locator: " + locator + " locatorType: " + locatorType)
+            print_stack()
+
+    def isElementPresent(self, locator, byType):
+        try:
+            element = self.driver.find_element(byType, locator)
+            if element is not None:
+                print("Element Found")
+                return True
+            else:
+                print("Element not found")
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def elementPresenceCheck(self, locator, byType):
+        try:
+            elementList = self.driver.find_elements(byType, locator)
+            if len(elementList) > 0:
+                print("Element Found")
+                return True
+            else:
+                print("Element not found")
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def waitForElement(self, locator, locatorType="id",
+                               timeout=10, pollFrequency=0.5):
+        element = None
+        try:
+            byType = self.getByType(locatorType)
+            print("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be clickable")
+            wait = WebDriverWait(self.driver, 10, poll_frequency=1,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            element = wait.until(EC.element_to_be_clickable((byType,
+                                                             "stopFilter_stops-0")))
+            print("Element appeared on the web page")
+        except:
+            print("Element not appeared on the web page")
+            print_stack()
+        return element
+
+
+
+7 - selenium driver:
+
+from selenium.webdriver.common.by import By
+from traceback import print_stack
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+
+class SeleniumDriver():
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "class":
+            return By.CLASS_NAME
+        elif locatorType == "link":
+            return By.LINK_TEXT
+        else:
+            print("Locator type " + locatorType + " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            print("Element Found with locator: " + locator + " and  locatorType: " + locatorType)
+        except:
+            print("Element not found with locator: " + locator + " and  locatorType: " + locatorType)
+        return element
+
+    def elementClick(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.click()
+            print("Clicked on element with locator: " + locator + " locatorType: " + locatorType)
+        except:
+            print("Cannot click on the element with locator: " + locator + " locatorType: " + locatorType)
+            print_stack()
+
+    def sendKeys(self, data, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.send_keys(data)
+            print("Sent data on element with locator: " + locator + " locatorType: " + locatorType)
+        except:
+            print("Cannot send data on the element with locator: " + locator +
+                  " locatorType: " + locatorType)
+            print_stack()
+
+    def isElementPresent(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            if element is not None:
+                print("Element Found")
+                return True
+            else:
+                print("Element not found")
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def elementPresenceCheck(self, locator, byType):
+        try:
+            elementList = self.driver.find_elements(byType, locator)
+            if len(elementList) > 0:
+                print("Element Found")
+                return True
+            else:
+                print("Element not found")
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def waitForElement(self, locator, locatorType="id",
+                               timeout=10, pollFrequency=0.5):
+        element = None
+        try:
+            byType = self.getByType(locatorType)
+            print("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be clickable")
+            wait = WebDriverWait(self.driver, 10, poll_frequency=1,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            element = wait.until(EC.element_to_be_clickable((byType,
+                                                             "stopFilter_stops-0")))
+            print("Element appeared on the web page")
+        except:
+            print("Element not appeared on the web page")
+            print_stack()
+        return element
+
+
+1- Selenium driver:
+
+from selenium.webdriver.common.by import By
+from traceback import print_stack
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+import utilities.custom_logger as cl
+import logging
+
+class SeleniumDriver():
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "class":
+            return By.CLASS_NAME
+        elif locatorType == "link":
+            return By.LINK_TEXT
+        else:
+            self.log.info("Locator type " + locatorType +
+                          " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            self.log.info("Element found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        except:
+            self.log.info("Element not found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        return element
+
+    def elementClick(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.click()
+            self.log.info("Clicked on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot click on the element with locator: " + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+    def sendKeys(self, data, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.send_keys(data)
+            self.log.info("Sent data on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot send data on the element with locator: " + locator +
+                  " locatorType: " + locatorType)
+            print_stack()
+
+    def isElementPresent(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            if element is not None:
+                self.log.info("Element Found")
+                return True
+            else:
+                self.log.info("Element not found")
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def elementPresenceCheck(self, locator, byType):
+        try:
+            elementList = self.driver.find_elements(byType, locator)
+            if len(elementList) > 0:
+                self.log.info("Element Found")
+                return True
+            else:
+                self.log.info("Element not found")
+                return False
+        except:
+            self.log.info("Element not found")
+            return False
+
+    def waitForElement(self, locator, locatorType="id",
+                               timeout=10, pollFrequency=0.5):
+        element = None
+        try:
+            byType = self.getByType(locatorType)
+            self.log.info("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be clickable")
+            wait = WebDriverWait(self.driver, 10, poll_frequency=1,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            element = wait.until(EC.element_to_be_clickable((byType,
+                                                             "stopFilter_stops-0")))
+            self.log.info("Element appeared on the web page")
+        except:
+            self.log.info("Element not appeared on the web page")
+            print_stack()
+        return element
+
+
+2- selenium driver:
+
+from selenium.webdriver.common.by import By
+from traceback import print_stack
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+import utilities.custom_logger as cl
+import logging
+
+class SeleniumDriver():
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "class":
+            return By.CLASS_NAME
+        elif locatorType == "link":
+            return By.LINK_TEXT
+        else:
+            self.log.info("Locator type " + locatorType +
+                          " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            self.log.info("Element found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        except:
+            self.log.info("Element not found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        return element
+
+    def elementClick(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.click()
+            self.log.info("Clicked on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot click on the element with locator: " + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+    def sendKeys(self, data, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.send_keys(data)
+            self.log.info("Sent data on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot send data on the element with locator: " + locator +
+                  " locatorType: " + locatorType)
+            print_stack()
+
+    def isElementPresent(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            if element is not None:
+                self.log.info("Element Found")
+                return True
+            else:
+                self.log.info("Element not found")
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def elementPresenceCheck(self, locator, byType):
+        try:
+            elementList = self.driver.find_elements(byType, locator)
+            if len(elementList) > 0:
+                self.log.info("Element Found")
+                return True
+            else:
+                self.log.info("Element not found")
+                return False
+        except:
+            self.log.info("Element not found")
+            return False
+
+    def waitForElement(self, locator, locatorType="id",
+                               timeout=10, pollFrequency=0.5):
+        element = None
+        try:
+            byType = self.getByType(locatorType)
+            self.log.info("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be clickable")
+            wait = WebDriverWait(self.driver, 10, poll_frequency=1,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            element = wait.until(EC.element_to_be_clickable((byType,
+                                                             "stopFilter_stops-0")))
+            self.log.info("Element appeared on the web page")
+        except:
+            self.log.info("Element not appeared on the web page")
+            print_stack()
+        return element
+
+
+3 - Login tests:
+
+from selenium import webdriver
+from pages.home.login_page import LoginPage
+import unittest
+import pytest
+
+class LoginTests(unittest.TestCase):
+    baseURL = "https://letskodeit.teachable.com/"
+    driver = webdriver.Firefox()
+    driver.maximize_window()
+    driver.implicitly_wait(3)
+    lp = LoginPage(driver)
+
+    @pytest.mark.run(order=2)
+    def test_validLogin(self):
+	self.lp.clearLoginFields()
+        self.lp.login("test@email.com", "abcabc")
+        result = self.lp.verifyLoginSuccessful()
+        assert result == True
+        self.driver.quit()
+
+    @pytest.mark.run(order=1)
+    def test_invalidLogin(self):
+        self.driver.get(self.baseURL)
+        self.lp.login("test@email.com", "abcabcabc")
+        result = self.lp.verifyLoginFailed()
+        assert result == True
+
+
+4 - selenium driver:
+
+from selenium.webdriver.common.by import By
+from traceback import print_stack
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+import utilities.custom_logger as cl
+import logging
+
+class SeleniumDriver():
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "class":
+            return By.CLASS_NAME
+        elif locatorType == "link":
+            return By.LINK_TEXT
+        else:
+            self.log.info("Locator type " + locatorType +
+                          " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            self.log.info("Element found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        except:
+            self.log.info("Element not found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        return element
+
+    def elementClick(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.click()
+            self.log.info("Clicked on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot click on the element with locator: " + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+    def sendKeys(self, data, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.send_keys(data)
+            self.log.info("Sent data on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot send data on the element with locator: " + locator +
+                  " locatorType: " + locatorType)
+            print_stack()
+
+    def isElementPresent(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            if element is not None:
+                self.log.info("Element Found")
+                return True
+            else:
+                self.log.info("Element not found")
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def elementPresenceCheck(self, locator, byType):
+        try:
+            elementList = self.driver.find_elements(byType, locator)
+            if len(elementList) > 0:
+                self.log.info("Element Found")
+                return True
+            else:
+                self.log.info("Element not found")
+                return False
+        except:
+            self.log.info("Element not found")
+            return False
+
+    def waitForElement(self, locator, locatorType="id",
+                               timeout=10, pollFrequency=0.5):
+        element = None
+        try:
+            byType = self.getByType(locatorType)
+            self.log.info("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be clickable")
+            wait = WebDriverWait(self.driver, 10, poll_frequency=1,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            element = wait.until(EC.element_to_be_clickable((byType,
+                                                             "stopFilter_stops-0")))
+            self.log.info("Element appeared on the web page")
+        except:
+            self.log.info("Element not appeared on the web page")
+            print_stack()
+        return element
+
+
+5 - webdriverfactory:
+
+"""
+@package base
+
+WebDriver Factory class implementation
+It creates a webdriver instance based on browser configurations
+
+Example:
+    wdf = WebDriverFactory(browser)
+    wdf.getWebDriverInstance()
+"""
+import traceback
+from selenium import webdriver
+
+class WebDriverFactory():
+
+    def __init__(self, browser):
+        """
+        Inits WebDriverFactory class
+
+        Returns:
+            None
+        """
+        self.browser = browser
+    """
+        Set chrome driver and iexplorer environment based on OS
+
+        chromedriver = "C:/.../chromedriver.exe"
+        os.environ["webdriver.chrome.driver"] = chromedriver
+        self.driver = webdriver.Chrome(chromedriver)
+
+        PREFERRED: Set the path on the machine where browser will be executed
+    """
+
+    def getWebDriverInstance(self):
+        """
+       Get WebDriver Instance based on the browser configuration
+
+        Returns:
+            'WebDriver Instance'
+        """
+        baseURL = "https://letskodeit.teachable.com/"
+        if self.browser == "iexplorer":
+            # Set ie driver
+            driver = webdriver.Ie()
+        elif self.browser == "firefox":
+            driver = webdriver.Firefox()
+        elif self.browser == "chrome":
+            # Set chrome driver
+            driver = webdriver.Chrome()
+        else:
+            driver = webdriver.Firefox()
+        # Setting Driver Implicit Time out for An Element
+        driver.implicitly_wait(3)
+        # Maximize the window
+        driver.maximize_window()
+        # Loading browser with App URL
+        driver.get(baseURL)
+        return driver
+
+1.
+
+from selenium.webdriver.common.by import By
+from traceback import print_stack
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+import utilities.custom_logger as cl
+import logging
+
+class SeleniumDriver():
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def getTitle(self):
+        return self.driver.title
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "class":
+            return By.CLASS_NAME
+        elif locatorType == "link":
+            return By.LINK_TEXT
+        else:
+            self.log.info("Locator type " + locatorType +
+                          " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            self.log.info("Element found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        except:
+            self.log.info("Element not found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        return element
+
+    def elementClick(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.click()
+            self.log.info("Clicked on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot click on the element with locator: " + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+    def sendKeys(self, data, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.send_keys(data)
+            self.log.info("Sent data on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot send data on the element with locator: " + locator +
+                  " locatorType: " + locatorType)
+            print_stack()
+
+    def isElementPresent(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            if element is not None:
+                self.log.info("Element Found")
+                return True
+            else:
+                self.log.info("Element not found")
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def elementPresenceCheck(self, locator, byType):
+        try:
+            elementList = self.driver.find_elements(byType, locator)
+            if len(elementList) > 0:
+                self.log.info("Element Found")
+                return True
+            else:
+                self.log.info("Element not found")
+                return False
+        except:
+            self.log.info("Element not found")
+            return False
+
+    def waitForElement(self, locator, locatorType="id",
+                               timeout=10, pollFrequency=0.5):
+        element = None
+        try:
+            byType = self.getByType(locatorType)
+            self.log.info("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be clickable")
+            wait = WebDriverWait(self.driver, 10, poll_frequency=1,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            element = wait.until(EC.element_to_be_clickable((byType,
+                                                             "stopFilter_stops-0")))
+            self.log.info("Element appeared on the web page")
+        except:
+            self.log.info("Element not appeared on the web page")
+            print_stack()
+        return element
+
+
+testcase status:
+
+"""
+@package utilities
+
+CheckPoint class implementation
+It provides functionality to assert the result
+
+Example:
+    self.check_point.markFinal("Test Name", result, "Message")
+"""
+import utilities.custom_logger as cl
+import logging
+from base.selenium_driver import SeleniumDriver
+
+class TestStatus(SeleniumDriver):
+
+    log = cl.customLogger(logging.INFO)
+
+    def __init__(self, driver):
+        """
+        Inits CheckPoint class
+        """
+        super(TestStatus, self).__init__(driver)
+        self.resultList = []
+
+    def setResult(self, result, resultMessage):
+        try:
+            if result is not None:
+                if result:
+                    self.resultList.append("PASS")
+                    self.log.info("### VERIFICATION SUCCESSFUL :: + " + resultMessage)
+                else:
+                    self.resultList.append("FAIL")
+                    self.log.info("### VERIFICATION FAILED :: + " + resultMessage)
+            else:
+                self.resultList.append("FAIL")
+                self.log.info("### VERIFICATION FAILED :: + " + resultMessage)
+        except:
+            self.resultList.append("FAIL")
+            self.log.info("### Exception Occurred !!!")
+
+    def mark(self, result, resultMessage):
+        """
+        Mark the result of the verification point in a test case
+        """
+        self.setResult(result, resultMessage)
+
+    def markFinal(self, testName, result, resultMessage):
+        """
+        Mark the final result of the verification point in a test case
+        This needs to be called at least once in a test case
+        This should be final test status of the test case
+        """
+        print()
+
+3- test status:
+
+"""
+@package utilities
+
+CheckPoint class implementation
+It provides functionality to assert the result
+
+Example:
+    self.check_point.markFinal("Test Name", result, "Message")
+"""
+import utilities.custom_logger as cl
+import logging
+from base.selenium_driver import SeleniumDriver
+
+class TestStatus(SeleniumDriver):
+
+    log = cl.customLogger(logging.INFO)
+
+    def __init__(self, driver):
+        """
+        Inits CheckPoint class
+        """
+        super(TestStatus, self).__init__(driver)
+        self.resultList = []
+
+    def setResult(self, result, resultMessage):
+        try:
+            if result is not None:
+                if result:
+                    self.resultList.append("PASS")
+                    self.log.info("### VERIFICATION SUCCESSFUL :: + " + resultMessage)
+                else:
+                    self.resultList.append("FAIL")
+                    self.log.error("### VERIFICATION FAILED :: + " + resultMessage)
+            else:
+                self.resultList.append("FAIL")
+                self.log.error("### VERIFICATION FAILED :: + " + resultMessage)
+        except:
+            self.resultList.append("FAIL")
+            self.log.error("### Exception Occurred !!!")
+
+    def mark(self, result, resultMessage):
+        """
+        Mark the result of the verification point in a test case
+        """
+        self.setResult(result, resultMessage)
+
+    def markFinal(self, testName, result, resultMessage):
+        """
+        Mark the final result of the verification point in a test case
+        This needs to be called at least once in a test case
+        This should be final test status of the test case
+        """
+        self.setResult(result, resultMessage)
+
+        if "FAIL" in self.resultList:
+            self.log.error(testName +  " ### TEST FAILED")
+            self.resultList.clear()
+            assert True == False
+        else:
+            self.log.info(testName + " ### TEST SUCCESSFUL")
+            self.resultList.clear()
+            assert True == True
+
+4 - selenium driver:
+
+from selenium.webdriver.common.by import By
+from traceback import print_stack
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+import utilities.custom_logger as cl
+import logging
+import time
+import os
+
+class SeleniumDriver():
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def screenShot(self, resultMessage):
+        """
+        Takes screenshot of the current open web page
+        """
+        fileName = resultMessage + "." + str(round(time.time() * 1000)) + ".png"
+        screenshotDirectory = "../screenshots/"
+        relativeFileName = screenshotDirectory + fileName
+        currentDirectory = os.path.dirname(__file__)
+        destinationFile = os.path.join(currentDirectory, relativeFileName)
+        destinationDirectory = os.path.join(currentDirectory, screenshotDirectory)
+
+        try:
+            if not os.path.exists(destinationDirectory):
+                os.makedirs(destinationDirectory)
+            self.driver.save_screenshot(destinationFile)
+            self.log.info("Screenshot save to directory: " + destinationFile)
+        except:
+            self.log.error("### Exception Occurred when taking screenshot")
+            print_stack()
+
+    def getTitle(self):
+        return self.driver.title
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "class":
+            return By.CLASS_NAME
+        elif locatorType == "link":
+            return By.LINK_TEXT
+        else:
+            self.log.info("Locator type " + locatorType +
+                          " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            self.log.info("Element found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        except:
+            self.log.info("Element not found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        return element
+
+    def elementClick(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.click()
+            self.log.info("Clicked on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot click on the element with locator: " + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+    def sendKeys(self, data, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            element.send_keys(data)
+            self.log.info("Sent data on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot send data on the element with locator: " + locator +
+                  " locatorType: " + locatorType)
+            print_stack()
+
+    def isElementPresent(self, locator, locatorType="id"):
+        try:
+            element = self.getElement(locator, locatorType)
+            if element is not None:
+                self.log.info("Element present with locator: " + locator +
+                              " locatorType: " + locatorType)
+                return True
+            else:
+                self.log.info("Element not present with locator: " + locator +
+                              " locatorType: " + locatorType)
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def elementPresenceCheck(self, locator, byType):
+        try:
+            elementList = self.driver.find_elements(byType, locator)
+            if len(elementList) > 0:
+                self.log.info("Element present with locator: " + locator +
+                              " locatorType: " + str(byType))
+                return True
+            else:
+                self.log.info("Element not present with locator: " + locator +
+                              " locatorType: " + str(byType))
+                return False
+        except:
+            self.log.info("Element not found")
+            return False
+
+    def waitForElement(self, locator, locatorType="id",
+                               timeout=10, pollFrequency=0.5):
+        element = None
+        try:
+            byType = self.getByType(locatorType)
+            self.log.info("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be clickable")
+            wait = WebDriverWait(self.driver, 10, poll_frequency=1,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            element = wait.until(EC.element_to_be_clickable((byType,
+                                                             "stopFilter_stops-0")))
+            self.log.info("Element appeared on the web page")
+        except:
+            self.log.info("Element not appeared on the web page")
+            print_stack()
+        return element
+
+
+5-teststatus:
+
+"""
+@package utilities
+
+CheckPoint class implementation
+It provides functionality to assert the result
+
+Example:
+    self.check_point.markFinal("Test Name", result, "Message")
+"""
+import utilities.custom_logger as cl
+import logging
+from base.selenium_driver import SeleniumDriver
+from traceback import print_stack
+
+class TestStatus(SeleniumDriver):
+
+    log = cl.customLogger(logging.INFO)
+
+    def __init__(self, driver):
+        """
+        Inits CheckPoint class
+        """
+        super(TestStatus, self).__init__(driver)
+        self.resultList = []
+
+    def setResult(self, result, resultMessage):
+        try:
+            if result is not None:
+                if result:
+                    self.resultList.append("PASS")
+                    self.log.info("### VERIFICATION SUCCESSFUL :: + " + resultMessage)
+                else:
+                    self.resultList.append("FAIL")
+                    self.log.error("### VERIFICATION FAILED :: + " + resultMessage)
+                    self.screenShot(resultMessage)
+            else:
+                self.resultList.append("FAIL")
+                self.log.error("### VERIFICATION FAILED :: + " + resultMessage)
+                self.screenShot(resultMessage)
+        except:
+            self.resultList.append("FAIL")
+            self.log.error("### Exception Occurred !!!")
+            self.screenShot(resultMessage)
+            print_stack()
+
+    def mark(self, result, resultMessage):
+        """
+        Mark the result of the verification point in a test case
+        """
+        self.setResult(result, resultMessage)
+
+    def markFinal(self, testName, result, resultMessage):
+        """
+        Mark the final result of the verification point in a test case
+        This needs to be called at least once in a test case
+        This should be final test status of the test case
+        """
+        self.setResult(result, resultMessage)
+
+        if "FAIL" in self.resultList:
+            self.log.error(testName +  " ### TEST FAILED")
+            self.resultList.clear()
+            assert True == False
+        else:
+            self.log.info(testName + " ### TEST SUCCESSFUL")
+            self.resultList.clear()
+            assert True == True
+
+util:
+
+"""
+@package utilities
+
+Util class implementation
+All most commonly used utilities should be implemented in this class
+
+Example:
+    name = self.util.getUniqueName()
+"""
+import time
+import traceback
+import random, string
+import utilities.custom_logger as cl
+import logging
+
+class Util(object):
+
+    log = cl.customLogger(logging.INFO)
+
+    def sleep(self, sec, info=""):
+        """
+        Put the program to wait for the specified amount of time
+        """
+        if info is not None:
+            self.log.info("Wait :: '" + str(sec) + "' seconds for " + info)
+        try:
+            time.sleep(sec)
+        except InterruptedError:
+            traceback.print_stack()
+
+    def getAlphaNumeric(self, length, type='letters'):
+        """
+        Get random string of characters
+
+        Parameters:
+            length: Length of string, number of characters string should have
+            type: Type of characters string should have. Default is letters
+            Provide lower/upper/digits for different types
+        """
+        alpha_num = ''
+        if type == 'lower':
+            case = string.ascii_lowercase
+        elif type == 'upper':
+            case = string.ascii_uppercase
+        elif type == 'digits':
+            case = string.digits
+        elif type == 'mix':
+            case = string.ascii_letters + string.digits
+        else:
+            case = string.ascii_letters
+        return alpha_num.join(random.choice(case) for i in range(length))
+
+    def getUniqueName(self, charCount=10):
+        """
+        Get a unique name
+        """
+        return self.getAlphaNumeric(charCount, 'lower')
+
+    def getUniqueNameList(self, listSize=5, itemLength=None):
+        """
+        Get a list of valid email ids
+
+        Parameters:
+            listSize: Number of names. Default is 5 names in a list
+            itemLength: It should be a list containing number of items equal to the listSize
+                        This determines the length of the each item in the list -> [1, 2, 3, 4, 5]
+        """
+        nameList = []
+        for i in range(0, listSize):
+            nameList.append(self.getUniqueName(itemLength[i]))
+        return nameList
+
+    def verifyTextContains(self, actualText, expectedText):
+        """
+        Verify actual text contains expected text string
+
+        Parameters:
+            expectedList: Expected Text
+            actualList: Actual Text
+        """
+        self.log.info("Actual Text From Application Web UI --> :: " + actualText)
+        self.log.info("Expected Text From Application Web UI --> :: " + expectedText)
+        if expectedText.lower() in actualText.lower():
+            self.log.info("### VERIFICATION CONTAINS !!!")
+            return True
+        else:
+            self.log.info("### VERIFICATION DOES NOT CONTAINS !!!")
+            return False
+
+    def verifyTextMatch(self, actualText, expectedText):
+        """
+        Verify text match
+
+        Parameters:
+            expectedList: Expected Text
+            actualList: Actual Text
+        """
+        self.log.info("Actual Text From Application Web UI --> :: " + actualText)
+        self.log.info("Expected Text From Application Web UI --> :: " + expectedText)
+        if actualText.lower() == expectedText.lower():
+            self.log.info("### VERIFICATION MATCHED !!!")
+            return True
+        else:
+            self.log.info("### VERIFICATION DOES NOT MATCHED !!!")
+            return False
+
+    def verifyListMatch(self, expectedList, actualList):
+        """
+        Verify two list matches
+
+        Parameters:
+            expectedList: Expected List
+            actualList: Actual List
+        """
+        return set(expectedList) == set(actualList)
+
+    def verifyListContains(self, expectedList, actualList):
+        """
+        Verify actual list contains elements of expected list
+
+        Parameters:
+            expectedList: Expected List
+            actualList: Actual List
+        """
+        length = len(expectedList)
+        for i in range(0, length):
+            if expectedList[i] not in actualList:
+                return False
+        else:
+            return True
+
+
+util:
+
+"""
+@package utilities
+
+Util class implementation
+All most commonly used utilities should be implemented in this class
+
+Example:
+    name = self.util.getUniqueName()
+"""
+import time
+import traceback
+import random, string
+import utilities.custom_logger as cl
+import logging
+
+class Util(object):
+
+    log = cl.customLogger(logging.INFO)
+
+    def sleep(self, sec, info=""):
+        """
+        Put the program to wait for the specified amount of time
+        """
+        if info is not None:
+            self.log.info("Wait :: '" + str(sec) + "' seconds for " + info)
+        try:
+            time.sleep(sec)
+        except InterruptedError:
+            traceback.print_stack()
+
+    def getAlphaNumeric(self, length, type='letters'):
+        """
+        Get random string of characters
+
+        Parameters:
+            length: Length of string, number of characters string should have
+            type: Type of characters string should have. Default is letters
+            Provide lower/upper/digits for different types
+        """
+        alpha_num = ''
+        if type == 'lower':
+            case = string.ascii_lowercase
+        elif type == 'upper':
+            case = string.ascii_uppercase
+        elif type == 'digits':
+            case = string.digits
+        elif type == 'mix':
+            case = string.ascii_letters + string.digits
+        else:
+            case = string.ascii_letters
+        return alpha_num.join(random.choice(case) for i in range(length))
+
+    def getUniqueName(self, charCount=10):
+        """
+        Get a unique name
+        """
+        return self.getAlphaNumeric(charCount, 'lower')
+
+    def getUniqueNameList(self, listSize=5, itemLength=None):
+        """
+        Get a list of valid email ids
+
+        Parameters:
+            listSize: Number of names. Default is 5 names in a list
+            itemLength: It should be a list containing number of items equal to the listSize
+                        This determines the length of the each item in the list -> [1, 2, 3, 4, 5]
+        """
+        nameList = []
+        for i in range(0, listSize):
+            nameList.append(self.getUniqueName(itemLength[i]))
+        return nameList
+
+    def verifyTextContains(self, actualText, expectedText):
+        """
+        Verify actual text contains expected text string
+
+        Parameters:
+            expectedList: Expected Text
+            actualList: Actual Text
+        """
+        self.log.info("Actual Text From Application Web UI --> :: " + actualText)
+        self.log.info("Expected Text From Application Web UI --> :: " + expectedText)
+        if expectedText.lower() in actualText.lower():
+            self.log.info("### VERIFICATION CONTAINS !!!")
+            return True
+        else:
+            self.log.info("### VERIFICATION DOES NOT CONTAINS !!!")
+            return False
+
+    def verifyTextMatch(self, actualText, expectedText):
+        """
+        Verify text match
+
+        Parameters:
+            expectedList: Expected Text
+            actualList: Actual Text
+        """
+        self.log.info("Actual Text From Application Web UI --> :: " + actualText)
+        self.log.info("Expected Text From Application Web UI --> :: " + expectedText)
+        if actualText.lower() == expectedText.lower():
+            self.log.info("### VERIFICATION MATCHED !!!")
+            return True
+        else:
+            self.log.info("### VERIFICATION DOES NOT MATCHED !!!")
+            return False
+
+    def verifyListMatch(self, expectedList, actualList):
+        """
+        Verify two list matches
+
+        Parameters:
+            expectedList: Expected List
+            actualList: Actual List
+        """
+        return set(expectedList) == set(actualList)
+
+    def verifyListContains(self, expectedList, actualList):
+        """
+        Verify actual list contains elements of expected list
+
+        Parameters:
+            expectedList: Expected List
+            actualList: Actual List
+        """
+        length = len(expectedList)
+        for i in range(0, length):
+            if expectedList[i] not in actualList:
+                return False
+        else:
+            return True
+
+seleniumdriver:
+
+from selenium.webdriver.common.by import By
+from traceback import print_stack
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+import utilities.custom_logger as cl
+import logging
+import time
+import os
+
+class SeleniumDriver():
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def __init__(self, driver):
+        self.driver = driver
+
+    def screenShot(self, resultMessage):
+        """
+        Takes screenshot of the current open web page
+        """
+        fileName = resultMessage + "." + str(round(time.time() * 1000)) + ".png"
+        screenshotDirectory = "../screenshots/"
+        relativeFileName = screenshotDirectory + fileName
+        currentDirectory = os.path.dirname(__file__)
+        destinationFile = os.path.join(currentDirectory, relativeFileName)
+        destinationDirectory = os.path.join(currentDirectory, screenshotDirectory)
+
+        try:
+            if not os.path.exists(destinationDirectory):
+                os.makedirs(destinationDirectory)
+            self.driver.save_screenshot(destinationFile)
+            self.log.info("Screenshot save to directory: " + destinationFile)
+        except:
+            self.log.error("### Exception Occurred when taking screenshot")
+            print_stack()
+
+    def getTitle(self):
+        return self.driver.title
+
+    def getByType(self, locatorType):
+        locatorType = locatorType.lower()
+        if locatorType == "id":
+            return By.ID
+        elif locatorType == "name":
+            return By.NAME
+        elif locatorType == "xpath":
+            return By.XPATH
+        elif locatorType == "css":
+            return By.CSS_SELECTOR
+        elif locatorType == "class":
+            return By.CLASS_NAME
+        elif locatorType == "link":
+            return By.LINK_TEXT
+        else:
+            self.log.info("Locator type " + locatorType +
+                          " not correct/supported")
+        return False
+
+    def getElement(self, locator, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_element(byType, locator)
+            self.log.info("Element found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        except:
+            self.log.info("Element not found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        return element
+
+    def getElementList(self, locator, locatorType="id"):
+        """
+        NEW METHOD
+        Get list of elements
+        """
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_elements(byType, locator)
+            self.log.info("Element list found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        except:
+            self.log.info("Element list not found with locator: " + locator +
+                          " and  locatorType: " + locatorType)
+        return element
+
+    def elementClick(self, locator="", locatorType="id", element=None):
+        """
+        Click on an element -> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
+            element.click()
+            self.log.info("Clicked on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot click on the element with locator: " + locator +
+                          " locatorType: " + locatorType)
+            print_stack()
+
+    def sendKeys(self, data, locator="", locatorType="id", element=None):
+        """
+        Send keys to an element -> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
+            element.send_keys(data)
+            self.log.info("Sent data on element with locator: " + locator +
+                          " locatorType: " + locatorType)
+        except:
+            self.log.info("Cannot send data on the element with locator: " + locator +
+                  " locatorType: " + locatorType)
+            print_stack()
+
+    def getText(self, locator="", locatorType="id", element=None, info=""):
+        """
+        NEW METHOD
+        Get 'Text' on an element
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator: # This means if locator is not empty
+                self.log.debug("In locator condition")
+                element = self.getElement(locator, locatorType)
+            self.log.debug("Before finding text")
+            text = element.text
+            self.log.debug("After finding element, size is: " + str(len(text)))
+            if len(text) == 0:
+                text = element.get_attribute("innerText")
+            if len(text) != 0:
+                self.log.info("Getting text on element :: " +  info)
+                self.log.info("The text is :: '" + text + "'")
+                text = text.strip()
+        except:
+            self.log.error("Failed to get text on element " + info)
+            print_stack()
+            text = None
+        return text
+
+    def isElementPresent(self, locator="", locatorType="id", element=None):
+        """
+        Check if element is present -> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
+            if element is not None:
+                self.log.info("Element present with locator: " + locator +
+                              " locatorType: " + locatorType)
+                return True
+            else:
+                self.log.info("Element not present with locator: " + locator +
+                              " locatorType: " + locatorType)
+                return False
+        except:
+            print("Element not found")
+            return False
+
+    def isElementDisplayed(self, locator="", locatorType="id", element=None):
+        """
+        NEW METHOD
+        Check if element is displayed
+        Either provide element or a combination of locator and locatorType
+        """
+        isDisplayed = False
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
+            if element is not None:
+                isDisplayed = element.is_displayed()
+                self.log.info("Element is displayed with locator: " + locator +
+                              " locatorType: " + locatorType)
+            else:
+                self.log.info("Element not displayed with locator: " + locator +
+                              " locatorType: " + locatorType)
+            return isDisplayed
+        except:
+            print("Element not found")
+            return False
+
+    def elementPresenceCheck(self, locator, byType):
+        """
+        Check if element is present
+        """
+        try:
+            elementList = self.driver.find_elements(byType, locator)
+            if len(elementList) > 0:
+                self.log.info("Element present with locator: " + locator +
+                              " locatorType: " + str(byType))
+                return True
+            else:
+                self.log.info("Element not present with locator: " + locator +
+                              " locatorType: " + str(byType))
+                return False
+        except:
+            self.log.info("Element not found")
+            return False
+
+    def waitForElement(self, locator, locatorType="id",
+                               timeout=10, pollFrequency=0.5):
+        element = None
+        try:
+            byType = self.getByType(locatorType)
+            self.log.info("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be clickable")
+            wait = WebDriverWait(self.driver, timeout=timeout,
+                                 poll_frequency=pollFrequency,
+                                 ignored_exceptions=[NoSuchElementException,
+                                                     ElementNotVisibleException,
+                                                     ElementNotSelectableException])
+            element = wait.until(EC.element_to_be_clickable((byType, locator)))
+            self.log.info("Element appeared on the web page")
+        except:
+            self.log.info("Element not appeared on the web page")
+            print_stack()
+        return element
+
+    def webScroll(self, direction="up"):
+        """
+        NEW METHOD
+        """
+        if direction == "up":
+            # Scroll Up
+            self.driver.execute_script("window.scrollBy(0, -1000);")
+
+        if direction == "down":
+            # Scroll Down
+            self.driver.execute_script("window.scrollBy(0, 1000);")
+
+
+register courses:
+
+import utilities.custom_logger as cl
+import logging
+from base.basepage import BasePage
+
+class RegisterCoursesPage(BasePage):
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.driver = driver
+
+    ################
+    ### Locators ###
+    ################
+    _search_box = "search-courses"
+    _course = "//div[contains(@class,'course-listing-title') and contains(text(),'{0}')]"
+    _all_courses = "course-listing-title"
+    _enroll_button = "enroll-button-top"
+    _cc_num = "cc_field"
+    _cc_exp = "cc-exp"
+    _cc_cvv = "cc_cvc"
+    _submit_enroll = "//div[@id='new_card']//button[contains(text(),'Enroll in Course')]"
+    _enroll_error_message = "//div[@id='new_card']//div[contains(text(),'The card number is not a valid credit card number.')]"
+
+    ############################
+    ### Element Interactions ###
+    ############################
+
+    def enterCourseName(self, name):
+        print()
+
+    def selectCourseToEnroll(self, fullCourseName):
+        print()
+
+    def clickOnEnrollButton(self):
+        print()
+
+    def enterCardNum(self, num):
+        print()
+
+    def enterCardExp(self, exp):
+        print()
+
+    def enterCardCVV(self, cvv):
+        print()
+
+    def clickEnrollSubmitButton(self):
+        print()
+
+    def enterCreditCardInformation(self, num, exp, cvv):
+        print()
+
+    def enrollCourse(self, num="", exp="", cvv=""):
+        print()
+
+    def verifyEnrollFailed(self):
+        print()
+
+4- register:
+
+import utilities.custom_logger as cl
+import logging
+from base.basepage import BasePage
+
+class RegisterCoursesPage(BasePage):
+
+    log = cl.customLogger(logging.DEBUG)
+
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.driver = driver
+
+    ################
+    ### Locators ###
+    ################
+    _search_box = "search-courses"
+    _course = "//div[contains(@class,'course-listing-title') and contains(text(),'{0}')]"
+    _all_courses = "course-listing-title"
+    _enroll_button = "enroll-button-top"
+    _cc_num = "cc_field"
+    _cc_exp = "cc-exp"
+    _cc_cvv = "cc_cvc"
+    _submit_enroll = "//div[@id='new_card']//button[contains(text(),'Enroll in Course')]"
+    _enroll_error_message = "//div[@id='new_card']//div[contains(text(),'The card number is not a valid credit card number.')]"
+
+    ############################
+    ### Element Interactions ###
+    ############################
+
+    def enterCourseName(self, name):
+        self.sendKeys(name, locator=self._search_box)
+
+    def selectCourseToEnroll(self, fullCourseName):
+        self.elementClick(locator=self._course.format(fullCourseName), locatorType="xpath")
+
+    def clickOnEnrollButton(self):
+        self.elementClick(locator=self._enroll_button)
+
+    def enterCardNum(self, num):
+        self.sendKeys(num, locator=self._cc_num)
+
+    def enterCardExp(self, exp):
+        self.sendKeys(exp, locator=self._cc_exp)
+
+    def enterCardCVV(self, cvv):
+        self.sendKeys(cvv, locator=self._cc_cvv)
+
+    def clickEnrollSubmitButton(self):
+        self.sendKeys(self._submit_enroll, locator="xpath")
+
+    def enterCreditCardInformation(self, num, exp, cvv):
+        self.enterCardNum(num)
+        self.enterCardExp(exp)
+        self.enterCardCVV(cvv)
+
+    def enrollCourse(self, num="", exp="", cvv=""):
+        self.clickOnEnrollButton()
+        self.webScroll(direction="down")
+        self.enterCreditCardInformation(num, exp, cvv)
+        self.clickEnrollSubmitButton()
+
+    def verifyEnrollFailed(self):
+        messageElement = self.waitForElement(self._enroll_error_message, locatorType="xpath")
+        result = self.isElementDisplayed(element=messageElement)
+        return result
+
+
+5.
+
+from pages.courses.register_courses_page import RegisterCoursesPage
+from utilities.teststatus import TestStatus
+import unittest
+import pytest
+
+@pytest.mark.usefixtures("oneTimeSetUp", "setUp")
+class RegisterCoursesTests(unittest.TestCase):
+
+    @pytest.fixture(autouse=True)
+    def objectSetup(self, oneTimeSetUp):
+        self.courses = RegisterCoursesPage(self.driver)
+        self.ts = TestStatus(self.driver)
+
+    @pytest.mark.run(order=1)
+    def test_invalidEnrollment(self):
+        self.courses.enterCourseName("JavaScript")
+        self.courses.selectCourseToEnroll("JavaScript for beginners")
+        self.courses.enrollCourse(num="10", exp="1220", cvv="10")
+        result = self.courses.verifyEnrollFailed()
+        self.ts.markFinal("test_invalidEnrollment", result,
+                          "Enrollment Failed Verification")
+
+multiple:
+
+from pages.courses.register_courses_page import RegisterCoursesPage
+from utilities.teststatus import TestStatus
+import unittest, pytest
+from ddt import ddt, data, unpack
+
+@pytest.mark.usefixtures("oneTimeSetUp", "setUp")
+@ddt
+class RegisterMultipleCoursesTests(unittest.TestCase):
+
+    @pytest.fixture(autouse=True)
+    def objectSetup(self, oneTimeSetUp):
+        self.courses = RegisterCoursesPage(self.driver)
+        self.ts = TestStatus(self.driver)
+
+    @pytest.mark.run(order=1)
+    @data(("JavaScript for beginners", "10", "1220", "10"), ("Learn Python 3 from scratch", "20", "1220", "20"))
+    @unpack
+    def test_invalidEnrollment(self, courseName, ccNum, ccExp, ccCVV):
+        self.courses.enterCourseName(courseName)
+        self.courses.selectCourseToEnroll(courseName)
+        self.courses.enrollCourse(num=ccNum, exp=ccExp, cvv=ccCVV)
+        result = self.courses.verifyEnrollFailed()
+        self.ts.markFinal("test_invalidEnrollment", result,
+                          "Enrollment Failed Verification")
+        self.driver.find_element_by_link_text("All Courses").click()
+
+
+Read data:
+
+import csv
+def getCSVData(fileName):
+    # create an empty list to store rows
+    rows = []
+    # open the CSV file
+    dataFile = open(fileName, "r")
+    # create a CSV Reader from CSV file
+    reader = csv.reader(dataFile)
+    # skip the headers
+    next(reader)
+    # add rows from reader to list
+    for row in reader:
+        rows.append(row)
+    return rows
+
+register course csv:
+
+from pages.courses.register_courses_page import RegisterCoursesPage
+from pages.home.navigation_page import NavigationPage
+from utilities.teststatus import TestStatus
+import unittest, pytest
+from ddt import ddt, data, unpack
+from utilities.read_data import getCSVData
+import time
+
+@pytest.mark.usefixtures("oneTimeSetUp", "setUp")
+@ddt
+class RegisterCoursesCSVDataTests(unittest.TestCase):
+
+    @pytest.fixture(autouse=True)
+    def objectSetup(self, oneTimeSetUp):
+        self.courses = RegisterCoursesPage(self.driver)
+        self.ts = TestStatus(self.driver)
+        self.nav = NavigationPage(self.driver)
+
+    def setUp(self):
+        self.nav.navigateToAllCourses()
+
+    @pytest.mark.run(order=1)
+    @data(*getCSVData("/Users/atomar/Documents/workspace_python/letskodeit/testdata.csv"))
+    @unpack
+    def test_invalidEnrollment(self, courseName, ccNum, ccExp, ccCVV):
+        self.courses.enterCourseName(courseName)
+        time.sleep(1)
+        self.courses.selectCourseToEnroll(courseName)
+        time.sleep(1)
+        self.courses.enrollCourse(num=ccNum, exp=ccExp, cvv=ccCVV)
+        time.sleep(1)
+        result = self.courses.verifyEnrollFailed()
+        self.ts.markFinal("test_invalidEnrollment", result,
+                          "Enrollment Failed Verification")
+
+Login:
+
+from pages.home.login_page import LoginPage
+from utilities.teststatus import TestStatus
+import unittest
+import pytest
+
+@pytest.mark.usefixtures("oneTimeSetUp", "setUp")
+class LoginTests(unittest.TestCase):
+
+    @pytest.fixture(autouse=True)
+    def objectSetup(self, oneTimeSetUp):
+        self.lp = LoginPage(self.driver)
+        self.ts = TestStatus(self.driver)
+
+    @pytest.mark.run(order=2)
+    def test_validLogin(self):
+        self.lp.login("test@email.com", "abcabc")
+        result1 = self.lp.verifyLoginTitle()
+        self.ts.mark(result1, "Title Verification")
+        result2 = self.lp.verifyLoginSuccessful()
+        self.ts.markFinal("test_validLogin", result2, "Login Verification")
+
+    @pytest.mark.run(order=1)
+    def test_invalidLogin(self):
+        self.lp.logout()
+        self.lp.login("test@email.com", "abcabcabc")
+        result = self.lp.verifyLoginFailed()
+        assert result == True
+
+Test suit demo:
+import unittest
+from tests.home.login_tests import LoginTests
+from tests.courses.register_courses_csv_data import RegisterCoursesCSVDataTests
+
+# Get all tests from the test classes
+tc1 = unittest.TestLoader().loadTestsFromTestCase(LoginTests)
+tc2 = unittest.TestLoader().loadTestsFromTestCase(RegisterCoursesCSVDataTests)
+
+# Create a test suite combining all test classes
+smokeTest = unittest.TestSuite([tc1, tc2])
+
+unittest.TextTestRunner(verbosity=2).run(smokeTest)
+
+
+Webdriver factory:
+
+"""
+@package base
+
+WebDriver Factory class implementation
+It creates a webdriver instance based on browser configurations
+
+Example:
+    wdf = WebDriverFactory(browser)
+    wdf.getWebDriverInstance()
+"""
+import traceback
+from selenium import webdriver
+import os
+
+class WebDriverFactory():
+
+    def __init__(self, browser):
+        """
+        Inits WebDriverFactory class
+
+        Returns:
+            None
+        """
+        self.browser = browser
+    """
+        Set chrome driver and iexplorer environment based on OS
+
+        chromedriver = "C:/.../chromedriver.exe"
+        os.environ["webdriver.chrome.driver"] = chromedriver
+        self.driver = webdriver.Chrome(chromedriver)
+
+        PREFERRED: Set the path on the machine where browser will be executed
+    """
+
+    def getWebDriverInstance(self):
+        """
+       Get WebDriver Instance based on the browser configuration
+
+        Returns:
+            'WebDriver Instance'
+        """
+        baseURL = "https://letskodeit.teachable.com/"
+        if self.browser == "iexplorer":
+            # Set ie driver
+            driver = webdriver.Ie()
+        elif self.browser == "firefox":
+            driver = webdriver.Firefox()
+        elif self.browser == "chrome":
+            # Set chrome driver
+            chromedriver = "/Users/atomar/Documents/workspace_personal/selenium/chromedriver"
+            os.environ["webdriver.chrome.driver"] = chromedriver
+            driver = webdriver.Chrome(chromedriver)
+            driver.set_window_size(1440, 900)
+        else:
+            driver = webdriver.Firefox()
+        # Setting Driver Implicit Time out for An Element
+        driver.implicitly_wait(3)
+        # Maximize the window
+        driver.maximize_window()
+        # Loading browser with App URL
+        driver.get(baseURL)
+        return driver
+
